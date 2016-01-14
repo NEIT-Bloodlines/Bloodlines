@@ -13,6 +13,5 @@
  */
 class validation {
     //put your code here
-   
-}
-    
+
+} 
