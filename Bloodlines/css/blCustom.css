@@ -1,0 +1,45 @@
+/*
+This style sheet will conatin all css elements for the landing page,
+signup and signin page, and admin page
+*/
+/* 
+    Created on : Jan 9, 2016, 2:38:44 AM
+    Author     : David Landi
+*/
+
+#landing{}
+.landing_content{}
+#about{}
+.about_content{}
+#manual{}
+.manual_content{}
+#rankings{}
+.rankings_content{}
+.frm_err_message{}
+.input_group_addon{}
+#signin_remeber_me{}
+@font-face{
+	font-family: 'Sentinel';
+	src: url('../fonts/Sentinel.ttf');
+}
+@font-face{
+	font-family: 'pillbox';
+	src: url('../fonts/pillbox.ttf');
+}
+@font-face{
+	font-family: 'gmr';
+	src: url('../fonts/gmr.ttf');
+}
+@media(min-width:768px) {
+    #landing{}
+    .landing_content{}
+    #about{}
+    .about_content{}
+    #manual{}
+    .manual_content{}
+    #rankings{}
+    .rankings_content{}
+    .frm_err_message{}
+    .input_group_addon{}
+    #signin_remeber_me{}
+}
