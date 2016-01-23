@@ -11,7 +11,11 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        // put your code here
+        
+        echo '<p>The index page</p>'
+        
         ?>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="signup.php">Sign up</a></li>
     </body>
 </html>
