@@ -6,7 +6,7 @@ signup and signin page, and admin page
     Created on : Jan 9, 2016, 2:38:44 AM
     Author     : David Landi
 */
-
+.navbar{border-radius:0;}
 #landing{}
 .landing_content{}
 #about{}
