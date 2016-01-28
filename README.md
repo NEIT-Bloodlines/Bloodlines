@@ -43,8 +43,7 @@ Nick Patel
 php models, data queuers, and validation. 
 
 David Landi
-- Responsible for frontend design/development and Javascript development that is 
-required for the Bloodlines game.
+- Responsible for frontend design/development, Javascript development, and the construction of a basic MVC framework.
 
 Justin Bareara
 - Responsible for the php backend development. His focus will be in the overall construction 
@@ -52,38 +51,56 @@ and implementation of the MVC structure and the development of mini framework th
 be utilized throughout the project. 
 
 ## Technical Specifications
-Custom MVC Structure
+Custom MVC Framework
+- Factory.php
+- MasterController.php
+- MasterModel.php
+- View.php
+- ViewModel.php
 
-- Modal
-  There will be a modal for each page on the website. They will have the following naming convention: nameOfThePageModal
-  and will be located in the associated Page Manager directory.
-  
-- View
-  There will be a view(s) for each page as well. They will have the following naming convention: nameOfPageContent.
-  The exception to this naming convention will be with the header, footer and navigation. The location for 
-  the views is in the View Directory
-  
-- Controller
-  Each page will have a controller.  A controller can be identified in the directory structure by file name 
-  index.php.  Each Page Manager directory will contain a index.php controller
   
 Directory Structure
 
 ROOT 
-- NameOfPageManager
-	- index.php
-	- nameOfPageModal.php
-- View
-	- nameOfPageContent.php
-	- dfltHeader.php
-	- dfltFooter.php
-	- dfltNav.php
-- Lib
-	- Inside the lib directory you will find the php framework that our team will build 
-	  to be utilized throughout the entire project.
-- css
-- js
-- img
-- fonts
-- landingPageModal.php
+- api (Location for all of the php classes needed for the project indluding the MVC framework)
+	- Factory.php
+	- MasterController.php
+	- MasterModel.php
+	- View.php
+	- ViewModel.php
+- controllers
+	- admin.php
+	- game.php
+	- home.php
+	- authentication.php
+	- reporting.php
+- models
+	- admin.php
+	- game.php
+	- home.php
+	- authentication.php
+	- reporting.php 
+- public
+	- css
+		- .css files
+	- font
+		- .eot files
+	- img
+		- .jpg files
+	- js
+		- .js files
+- views
+	- Admin
+		- index.php
+	- Game
+		- index.php
+	- Home
+		- index.php
+	- Authentication
+		- index.php
+		- newmember.php
+	- PlayerRankings
+		- index.php
+	- masterpage.php
+- .htaccess
 - index.php
