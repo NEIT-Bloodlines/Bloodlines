@@ -1,4 +1,8 @@
 <?php
+/* 
+ * @author: Naitik Patel 
+ * Date: 1/28/16
+ */
 
 class HomeController extends MasterController
 {

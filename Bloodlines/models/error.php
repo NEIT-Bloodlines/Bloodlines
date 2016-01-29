@@ -15,5 +15,3 @@ class ErrorModel extends BaseModel
         return $this->viewModel;
     }
 }
-
-?>
