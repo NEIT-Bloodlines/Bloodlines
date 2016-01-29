@@ -60,9 +60,13 @@ The Bloodlines project will be utilizing the MVC pattern in order to efficiently
            will first filter the stored URL data by passing it into a asscoiative array that contains methods for validation and
            mapping purposes. If valid, the requested contorller object will be built.
 - MasterController.php
+	- An abstract base class in which all controller classes inherit from.
 - MasterModel.php
+	- An abstract base class in which all model classes inherit from.
 - View.php
+	- A class that is use to establish the path to a view. It also offers a method to display that view.
 - ViewModel.php
+	- A class that provides functionality to a model object for returning data that a controller will send to a view. 
 
   
 Directory Structure
