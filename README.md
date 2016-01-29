@@ -50,9 +50,15 @@ Justin Bareara
 and implementation of the MVC structure and the development of mini framework that will 
 be utilized throughout the project. 
 
-## Technical Specifications
-Custom MVC Framework
+## MVC Framework
+The Bloodlines project will be utilizing the MVC pattern in order to efficiently relate the user interface to the underlying data models. Although PHP already has many proven MVC frameworks, we have decided that it would be best to develope a custom MVC framework that is much more light weight and customized to our project requirments. 
+
 - Factory.php
+	- $factory = new Factory will create an instance of the Factory class on the root index.php file. On instance creation the 
+	   factory object will cache the data contained in the URL that will be used to build a new controller object. 
+           $controller = $factory->buildController() will execute the buildController method of the Factory class. This method will
+           will first filter the stored URL data by passing it into a asscoiative array that contains methods for validation and
+           mapping purposes. If valid, the requested contorller object will be built.
 - MasterController.php
 - MasterModel.php
 - View.php
