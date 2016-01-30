@@ -23,13 +23,9 @@
 <!-- FontAwsome CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <!-- blCustom CSS -->
-<link href="public/css/blCustom" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+<link href="public/css/blCustom.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
 </head>
 <body>
     
@@ -59,7 +55,7 @@
 <a href="#rankings">Rankings</a>
 </li>
 <li>
-<a href="/signin">Login</a>
+<a href="/Authentication">Login</a>
 </li>
 <li>
 <a href="/signup">Sign Up</a>
@@ -69,13 +65,10 @@
 </div>
 </nav>
 
-
+<div class="container">
 <?php require($this->viewFile); echo $this->viewFile;?>    
+</div>
     
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!-- src="js/bootstrap.min.js" -->
 <script src="<?php /*TODO need function to set path*/ ?>"></script>
 <!-- src="js/blCustom.min.js" -->
 <script src="<?php /*TODO need function to set path*/ ?>"></script>

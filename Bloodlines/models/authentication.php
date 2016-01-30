@@ -6,3 +6,12 @@
  * and open the template in the editor.
  */
 
+class AuthenticationModel extends MasterModel
+{
+    //data passed to the home index view
+    public function index()
+    {   
+        $this->viewModel->set("pageTitle","Bloodlines");
+        return $this->viewModel;
+    }
+}

@@ -6,18 +6,17 @@ signup and signin page, and admin page
     Created on : Jan 9, 2016, 2:38:44 AM
     Author     : David Landi
 */
+.alert-danger{font-size: 80%;}
+.dflt_modal_style{}
+.frm_input_space{margin-bottom: 5px;}
+.frm_btn{margin-top: 10px;}
+.member_login_container{}
 .navbar{border-radius:0;}
-#landing{}
-.landing_content{}
-#about{}
-.about_content{}
-#manual{}
-.manual_content{}
-#rankings{}
-.rankings_content{}
-.frm_err_message{}
-.input_group_addon{}
-#signin_remeber_me{}
+.pnl_authentication{max-width: 700px;}
+
+
+
+
 @font-face{
 	font-family: 'Sentinel';
 	src: url('../fonts/Sentinel.ttf');
@@ -31,15 +30,6 @@ signup and signin page, and admin page
 	src: url('../fonts/gmr.ttf');
 }
 @media(min-width:768px) {
-    #landing{}
-    .landing_content{}
-    #about{}
-    .about_content{}
-    #manual{}
-    .manual_content{}
-    #rankings{}
-    .rankings_content{}
-    .frm_err_message{}
-    .input_group_addon{}
-    #signin_remeber_me{}
+    .dflt_modal_style{margin-top: 150px;}
+    .member_login_container{margin-top: 300px;}
 }
