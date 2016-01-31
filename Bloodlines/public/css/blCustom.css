@@ -7,15 +7,39 @@ signup and signin page, and admin page
     Author     : David Landi
 */
 .alert-danger{font-size: 80%;}
+.bl_logo{
+    text-shadow: 1px 1px 5px #fff, 5px 5px 5px #000000, 5px 5px 20px #000000;
+    font-family: 'pillbox';
+    font-size: 100px;
+}
+.bl_slogan{
+    text-shadow: 1px 1px 5px #fff, 1px 2px 2px #000000;
+    font-family: 'gmr';
+    font-size: 30px;
+}
+#credits{}
+.credits_contents{}
 .dflt_modal_style{}
 .frm_input_space{margin-bottom: 5px;}
 .frm_btn{margin-top: 10px;}
+#landing{
+    background-image: url(../img/headBG.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.landing_content{text-align: center;}
+.landing_btn{}
 .member_login_container{}
 .navbar{border-radius:0;}
 .pnl_authentication{max-width: 700px;}
-
-
-
+.pnl_credits{}
+@media(min-width:768px) {
+    .dflt_modal_style{margin-top: 150px;}
+    .member_login_container{margin-top: 300px;}
+}
 
 @font-face{
 	font-family: 'Sentinel';
@@ -28,8 +52,4 @@ signup and signin page, and admin page
 @font-face{
 	font-family: 'gmr';
 	src: url('../fonts/gmr.ttf');
-}
-@media(min-width:768px) {
-    .dflt_modal_style{margin-top: 150px;}
-    .member_login_container{margin-top: 300px;}
 }
