@@ -1,4 +1,9 @@
 <?php
+/* 
+ * Developed by: David Landi 1/28/16
+ * Purpose: Acts as director to build authentication pages
+ * Refactored By: (Name Date Reason)
+ */
 
 class AuthenticationController extends MasterController
 {

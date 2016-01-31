@@ -1,6 +1,7 @@
 <?php
 /* 
  * @author: Naitik Patel 
+ * Purpose: Acts as director to build authentication pages
  * Date: 1/28/16
  */
 

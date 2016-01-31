@@ -1,7 +1,8 @@
 <?php
 /* 
- * @author: Naitik Patel 
- * Date: 1/28/16
+ * Developed by: Natik Patel 1/25/16
+ * Purpose: Acts as a director to build game page
+ * Refactored By: (Name Date Reason)
  */
 
 class GameController extends MasterController

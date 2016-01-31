@@ -1,4 +1,9 @@
 <?php
+/* 
+ * Developed by: DavidLandi 1/25/16
+ * Purpose: Acts as a director to build the home page
+ * Refactored By: (Name Date Reason)
+ */
 
 class HomeController extends MasterController
 {

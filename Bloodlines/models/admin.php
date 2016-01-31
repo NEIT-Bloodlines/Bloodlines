@@ -1,7 +1,8 @@
 <?php
 /* 
- * @author: Naitik Patel 
- * Date: 1/28/16
+ * Developed by: Natic Patel 1/28/16
+ * Purpose: 
+ * Refactored By: (Name Date Reason)
  */
 
 class AdminModel extends MasterModel

@@ -1,6 +1,8 @@
 <?php
 /* 
- * 
+ * Developed by: DavidLandi 1/25/16
+ * Purpose: 
+ * Refactored By: (Name Date Reason)
  */
 
 class HomeModel extends MasterModel
