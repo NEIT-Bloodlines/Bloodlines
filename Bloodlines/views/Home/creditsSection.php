@@ -9,6 +9,7 @@
  * Modifed by: (Name, Reason, Date)
  *  */
 ?>
+<section id="credits">
 <div class="container credits_contents">
     <div class="row">
         <div class="col-xs-12 col-md-4">
@@ -43,4 +44,4 @@
         </div>
     </div>
 </div>
-
+</section>

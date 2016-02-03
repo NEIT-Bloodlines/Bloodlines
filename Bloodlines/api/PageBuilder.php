@@ -15,11 +15,17 @@
  * Modifed by: (Name, Reason, Date)
  *  */
 abstract class Page{
-    protected $homeViewPaths = array('views/Home/landingSection.php',
-                                     'views/Home/aboutSection.php',
-                                     'views/Home/creditsSection.php',
-                                     'views/Home/technicalSection.php',
-                                     'views/Home/homeModals.php');
+    protected $homeViews = array('homeNavBar.php',
+                                 'landingSection.php',
+                                 'aboutSection.php',
+                                 'creditsSection.php',
+                                 'technicalSection.php',
+                                 'homeModals.php');
+    
+    protected $authenticantionPaths = array('authenticationNavBar.php',
+                                            'memberLogin.php',
+                                            'memberSignup.php',
+                                            'authenticationModels.php');
     
     abstract protected function buildPage();
 }
@@ -30,9 +36,24 @@ class PageHome extends Page{
     }
     
     protected function buildPage(){
-        foreach($this->homeViewPaths as $path){
-            require($path);
-            echo($path);
+        $basePath = 'views/Home/';
+        foreach($this->homeViews as $fileName){
+            require($basePath . $fileName);
+            echo($basePath . $fileName);
+        }
+    }
+}
+
+class PageAuthentication extends Page{
+    public function __construct(){
+        $this->buildPage();
+    }
+    
+    protected function buildPage(){
+        $basePath = 'views/Authentication/';
+        foreach($this->authenticantionPaths as $fileName){
+            require($basePath . $fileName);
+            echo($basePath . $fileName);
         }
     }
 }

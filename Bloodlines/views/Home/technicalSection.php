@@ -9,7 +9,7 @@
  * Modifed by: (Name, Reason, Date)
  *  */
 ?>
-
+<section id="techical">
 <div class="container technical_content">
     <div class="row">
         <div class="col-md-6">
@@ -49,3 +49,4 @@
         </div>
     </div>
 </div>
+</section>

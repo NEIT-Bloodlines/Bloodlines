@@ -13,7 +13,7 @@
  * Modifed by: (Name, Reason, Date)
  *  */
 ?>
-
+<section id="landing">
 <div class="container landing_content">
     <div class="row">
         <div class="col-md-12">
@@ -29,4 +29,4 @@
         </div>
     </div>
 </div>
-
+</section>
