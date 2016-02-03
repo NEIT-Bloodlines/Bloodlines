@@ -6,10 +6,10 @@
  *  */
 
 var AuthModelHandler = (function(){
-    var mdlMemberHelp = $('#new_member_help_popup');
-    var mdlNewMemberHelp = $('#member_login_help_popup');
-    var btnMemberHelp = $('');
-    var btnNewMemberHelp = $('');
+    var mdlMemberHelp = $('#member_login_help_popup');
+    var mdlNewMemberHelp = $('#new_member_help_popup');
+    var btnMemberHelp = $('#btn_member_help');
+    var btnNewMemberHelp = $('#btn_signup_help');
 
     var onBtnMemberHelpClick = function(){
         btnMemberHelp.click(function(){
@@ -29,7 +29,6 @@ var AuthModelHandler = (function(){
         onBtnMemberHelpClick : onBtnMemberHelpClick,
         onBtnmdlNewMemberHelpClick : onBtnmdlNewMemberHelpClick
     };
-
 })();
 
 var FormDisplayer = (function(){
@@ -62,6 +61,8 @@ var FormDisplayer = (function(){
 })();
 
 $( document ).ready(function(){
-	FormDisplayer.onLnkLoginClick();
+    FormDisplayer.onLnkLoginClick();
     FormDisplayer.onLnkSignupClick();
+    AuthModelHandler.onBtnMemberHelpClick();
+    AuthModelHandler.onBtnmdlNewMemberHelpClick();
 });
