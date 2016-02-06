@@ -28,6 +28,22 @@ signup and signin page, and admin page
 }
 /*-------------------------------------------*/
 
+/*PreGame CSS -------------------------------*/
+#lobby{}
+.lobby_content{}
+.stat_box{width: 100%; min-height: 200px;}
+.pnl_loggedin_size{}
+.pnl_chat_size{}
+/*At > 13 inches*/
+@media(min-width:768px){
+    #lobby{}
+    .lobby_content{}
+    .stat_box{}
+    .pnl_loggedin_size{min-height: 600px;}
+    .pnl_chat_size{min-height: 600px;}
+}
+/*-------------------------------------------*/
+
 .alert-danger{font-size: 80%;}
 body{width: 100%; height: 100%}
 .bl_logo{
