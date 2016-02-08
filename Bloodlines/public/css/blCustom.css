@@ -29,13 +29,18 @@ signup and signin page, and admin page
 /*-------------------------------------------*/
 
 /*PreGame CSS -------------------------------*/
+#host_game{}
 #lobby{}
+.host_game_content{}
 .lobby_content{}
 .stat_box{width: 100%; min-height: 200px;}
 .pnl_loggedin_size{}
 .pnl_chat_size{}
+
 /*At > 13 inches*/
 @media(min-width:768px){
+    #host_game{}
+    .host_game_content{}
     #lobby{}
     .lobby_content{}
     .stat_box{}
