@@ -27,6 +27,12 @@ abstract class Page{
                                             'memberSignup.php',
                                             'authenticationModels.php');
     
+    protected $preGamePaths = array('preGameNavBar.php',
+                                    'preGameLobby.php',
+                                    'preGameJoinGame.php',
+                                    'preGameHostGame.php',
+                                    'preGameModels.php');
+    
     abstract protected function buildPage();
 }
 
@@ -51,6 +57,20 @@ class PageAuthentication extends Page{
     
     protected function buildPage(){
         $basePath = 'views/Authentication/';
+        foreach($this->authenticantionPaths as $fileName){
+            require($basePath . $fileName);
+            echo($basePath . $fileName);
+        }
+    }
+}
+
+class PagePreGame extends Page{
+    public function __construct(){
+        $this->buildPage();
+    }
+    
+    protected function buildPage(){
+        $basePath = 'views/PreGame';
         foreach($this->authenticantionPaths as $fileName){
             require($basePath . $fileName);
             echo($basePath . $fileName);
