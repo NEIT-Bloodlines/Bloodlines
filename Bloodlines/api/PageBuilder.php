@@ -33,6 +33,9 @@ abstract class Page{
                                     'preGameHostGame.php',
                                     'preGameModels.php');
     
+    protected $statisticsPaths = array('statsNavBar.php', 
+                                       'statsCoreContent.php');
+    
     abstract protected function buildPage();
 }
 
@@ -70,8 +73,22 @@ class PagePreGame extends Page{
     }
     
     protected function buildPage(){
-        $basePath = 'views/PreGame';
+        $basePath = 'views/PreGame/';
         foreach($this->authenticantionPaths as $fileName){
+            require($basePath . $fileName);
+            echo($basePath . $fileName);
+        }
+    }
+}
+
+class PageStatistics extends Page{
+    public function __construct(){
+        $this->buildPage();
+    }
+    
+    protected function buildPage(){
+        $basePath = 'views/Statistics/';
+        foreach($this->statisticsPaths as $fileName){
             require($basePath . $fileName);
             echo($basePath . $fileName);
         }
