@@ -48,7 +48,7 @@ class PageHome extends Page{
         $basePath = 'views/Home/';
         foreach($this->homeViews as $fileName){
             require($basePath . $fileName);
-            echo($basePath . $fileName);
+            #echo($basePath . $fileName);
         }
     }
 }
@@ -62,7 +62,7 @@ class PageAuthentication extends Page{
         $basePath = 'views/Authentication/';
         foreach($this->authenticantionPaths as $fileName){
             require($basePath . $fileName);
-            echo($basePath . $fileName);
+            #echo($basePath . $fileName);
         }
     }
 }
@@ -76,7 +76,7 @@ class PagePreGame extends Page{
         $basePath = 'views/PreGame/';
         foreach($this->authenticantionPaths as $fileName){
             require($basePath . $fileName);
-            echo($basePath . $fileName);
+            #echo($basePath . $fileName);
         }
     }
 }
@@ -90,7 +90,7 @@ class PageStatistics extends Page{
         $basePath = 'views/Statistics/';
         foreach($this->statisticsPaths as $fileName){
             require($basePath . $fileName);
-            echo($basePath . $fileName);
+            #echo($basePath . $fileName);
         }
     }
 }

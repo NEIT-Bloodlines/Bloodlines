@@ -30,7 +30,7 @@
 <body>
 
 
-<?php require($this->viewFile); echo $this->viewFile;?>    
+<?php require($this->viewFile); #echo $this->viewFile;?>    
 
     
 <script src="<?php /*TODO need function to set path*/ ?>"></script>
