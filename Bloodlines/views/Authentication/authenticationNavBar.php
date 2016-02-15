@@ -9,7 +9,7 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand navbarLogo" href="#page-top">Bloodlines</a>
+<a class="navbar-brand navbarLogo" href="/Home">Bloodlines</a>
 </div>
 <div class="collapse navbar-collapse" id="nd_collapse">
 <ul class="nav navbar-nav navbar-right">
