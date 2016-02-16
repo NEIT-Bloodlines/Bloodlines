@@ -21,7 +21,7 @@
         <div class="panel-heading">Member Signup
             <span class="pull-right"><i class="fa fa-info-circle" id="btn_signup_help"></i></span>
         </div>
-        <div class="panel-body">
+        <div class="panel-body errors">
             <form class="form-horizontal" role="form">
                 <div class="input-group frm_input_space">
                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>

@@ -24,7 +24,7 @@
     <div class="row">
         <div class="col-md-12">
             <button type="button" class="btn btn-success btn_cust" id="started" title="prop section">
-                    GET STARTED
+                    JOIN NOW
             </button>           
         </div>
     </div>

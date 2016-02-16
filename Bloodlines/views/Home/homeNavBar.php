@@ -3,7 +3,7 @@
 ?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-<div class="container">
+<div class="container-fluid nav_width">
 <div class="navbar-header page-scroll">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nd_collapse">
 <span class="sr-only">Toggle navigation</span>
@@ -22,6 +22,9 @@
 <a href="#about">About</a>
 </li>
 <li class="page-scroll">
+<a href="#manual">Credits</a>
+</li>
+<li class="page-scroll">
 <a href="#manual">Manual</a>
 </li>
 <li class="page-scroll">
@@ -29,9 +32,6 @@
 </li>
 <li>
 <a href="/Authentication">Login</a>
-</li>
-<li>
-<a href="/signup">Sign Up</a>
 </li>
 </ul>
 </div>

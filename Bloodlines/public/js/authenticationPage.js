@@ -62,7 +62,7 @@ var AuthControlsHandler = (function(){
 	var txtSUname = $('#txtSUname');
 	var alertwelcomeSU = $('#alertwelcomeSU');
 	var alertTxtNameNullSU = $('#alertTxtNameNullSU');
-	var alertTxtEmailNullSU = $('alertTxtEmailNullSU');
+	var alertTxtEmailNullSU = $('#alertTxtEmailNullSU');
 	var alertTxtPswNullSU = $('#alertTxtPswNullSU');
 	var alertTxtpswConfNullSU = $('#alertTxtpswConfNullSU');
 	var alertMoreThanOneNullSU = $('#alertMoreThanOneNullSU');
@@ -84,8 +84,8 @@ var AuthControlsHandler = (function(){
 		btnSignUp.click(function(e){
 			console.log('btnSignUp');
 			e.preventDefault();
-			displayAlertPswFieldsNotMatch();
 			displayAlertMoreThanOneNullSU();
+			displayAlertPswFieldsNotMatch();
 			displaylertTxtpswConfNullSU();
 			displayAlertTxtPswNullSU();
 			displayAlertTxtEmailNullSU();
@@ -95,75 +95,50 @@ var AuthControlsHandler = (function(){
 	
 	function displayAlertPswFieldsNotMatch(){
 		if(isPasswordFieldsAmatch()){
-			alertwelcomeSU.addClass('hidden');
-			alertTxtNameNullSU.addClass('hidden');
-			alertTxtEmailNullSU.addClass('hidden');
-			alertTxtPswNullSU.addClass('hidden');
-			alertTxtpswConfNullSU.addClass('hidden');
-			alertMoreThanOneNullSU.addClass('hidden');
+ 			alertwelcomeSU.addClass('hidden');
 			alertPswFieldsNotMatch.removeClass('hidden');
 		}
+		else{alertPswFieldsNotMatch.addClass('hidden');}
 	};
 	
 	function displayAlertMoreThanOneNullSU(){
-		if(totalNull() > 1){
-			alertMoreThanOneNullSU.addClass('hidden');
+		if(totalNull() >= 0){
 			alertwelcomeSU.addClass('hidden');
-			alertTxtNameNullSU.addClass('hidden');
-			alertTxtEmailNullSU.addClass('hidden');
-			alertTxtPswNullSU.addClass('hidden');
-			alertTxtpswConfNullSU.addClass('hidden');
-			alertPswFieldsNotMatch.addClass('hidden');
 			alertMoreThanOneNullSU.removeClass('hidden');
 		}
+		else{alertMoreThanOneNullSU.addClass('hidden');}
 	};
 	
 	function displaylertTxtpswConfNullSU(){
 		if(isInputFieldNull(txtSUpswConf)){
 			alertwelcomeSU.addClass('hidden');
-			alertTxtNameNullSU.addClass('hidden');
-			alertTxtEmailNullSU.addClass('hidden');
-			alertTxtPswNullSU.addClass('hidden');
-			alertPswFieldsNotMatch.addClass('hidden');
-			alertMoreThanOneNullSU.addClass('hidden');
 			alertTxtpswConfNullSU.removeClass('hidden');
 		}
+		else{alertTxtpswConfNullSU.addClass('hidden');}
 	};
 	
 	function displayAlertTxtPswNullSU(){
 		if(isInputFieldNull(txtSUpsw)){
 			alertwelcomeSU.addClass('hidden');
-			alertTxtNameNullSU.addClass('hidden');
-			alertTxtEmailNullSU.addClass('hidden');
-			alertPswFieldsNotMatch.addClass('hidden');
-			alertTxtpswConfNullSU.addClass('hidden');
-			alertMoreThanOneNullSU.addClass('hidden');
-			alertTxtPswNullSU.removeClass('hidden');;
+			alertTxtPswNullSU.removeClass('hidden');
 		}
+		else{alertTxtPswNullSU.addClass('hidden');}
 	};
 	
 	function displayAlertTxtEmailNullSU(){
 		if(isInputFieldNull(txtSUemail)){
-			alertwelcomeSU.addClass('hidden');
-			alertTxtNameNullSU.addClass('hidden');
-			alertPswFieldsNotMatch.addClass('hidden');
-			alertTxtPswNullSU.addClass('hidden');
-			alertTxtpswConfNullSU.addClass('hidden');
-			alertMoreThanOneNullSU.addClass('hidden');
+ 			alertwelcomeSU.addClass('hidden');
 			alertTxtEmailNullSU.removeClass('hidden');
 		}
+		else{alertTxtEmailNullSU.addClass('hidden');}
 	};
 	
 	function displayAlertTxtNameNullSU(){
 		if(isInputFieldNull(txtSUname)){
 			alertwelcomeSU.addClass('hidden');
-			alertPswFieldsNotMatch.addClass('hidden');
-			alertTxtEmailNullSU.addClass('hidden');
-			alertTxtPswNullSU.addClass('hidden');
-			alertTxtpswConfNullSU.addClass('hidden');
-			alertMoreThanOneNullSU.addClass('hidden');
 			alertTxtNameNullSU.removeClass('hidden');
 		}
+		else{alertTxtNameNullSU.addClass('hidden');}
 	};
 	
 	function isInputFieldNull(fieldID){
@@ -176,8 +151,8 @@ var AuthControlsHandler = (function(){
 		return false;
 	};
 	function isPasswordFieldsAmatch(){
-		var pswValue = txtSUpsw.val();
-		var pswConfVal = txtSUpswConf.val();
+		var pswValue = txtSUpsw.text();
+		var pswConfVal = txtSUpswConf.text();
 		if(pswValue === pswConfVal){
 			console.log('psw does match');
 			return true;
