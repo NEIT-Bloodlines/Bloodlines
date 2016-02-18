@@ -7,8 +7,8 @@
 
  
  /*
-	Purpose:
-		Modual to display modals
+    Purpose:
+    Modual to display modals
 */
 var AuthModelHandler = (function(){
     var mdlMemberHelp = $('#member_login_help_popup');
