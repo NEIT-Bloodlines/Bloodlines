@@ -5,12 +5,73 @@
  * Modifed by: (Name, Reason, Date)
  *  */
 
-
+//Object that contains methods for handeling modal events
 var ModalHandler = (function(){
-    var executeModalHandler = function(){
-        
+    var ss1FullView = $('#ss1FullView');
+    var ss2FullView = $('#ss2FullView');
+    var ss3FullView = $('#ss3FullView');
+    var ss4FullView = $('#ss4FullView');
+    var ss5FullView = $('#ss5FullView');
+    var ss6FullView = $('#ss6FullView');
+    var btnSs1FullView = $('#btnSs1FullView');
+    var btnSs2FullView = $('#btnSs2FullView');
+    var btnSs3FullView = $('#btnSs3FullView');
+    var btnSs4FullView = $('#btnSs4FullView');
+    var btnSs5FullView = $('#btnSs5FullView');
+    var btnSs6FullView = $('#btnSs6FullView');
+    
+    var setModalEventListeners = function(){
+        btnSs1FullViewClick();
+        btnSs2FullViewClick();
+        btnSs3FullViewClick();
+        btnSs4FullViewClick();
+        btnSs5FullViewClick();
+        btnSs6FullViewClick();
     };
-    return{executeModalHandler : executeModalHandler};
+    
+    function btnSs1FullViewClick(){
+        btnSs1FullView.click(function(e){
+            console.log('btnSs1FullView clicked');
+            e.preventDefault();
+        });
+    };
+    
+    function btnSs2FullViewClick(){
+        btnSs2FullView.click(function(e){
+            console.log('btnSs2FullView clicked');
+            e.preventDefault();
+        });
+    };
+    
+    function btnSs3FullViewClick(){
+        btnSs3FullView.click(function(e){
+            console.log('btnSs3FullView clicked');
+            e.preventDefault();
+        });
+    };
+    
+    function btnSs4FullViewClick(){
+        btnSs4FullView.click(function(e){
+            console.log('btnSs4FullView clicked');
+            e.preventDefault();
+        });
+    };
+    
+    function btnSs5FullViewClick(){
+        btnSs5FullView.click(function(e){
+            console.log('btnSs5FullView clicked');
+            e.preventDefault();
+        });
+    };
+    
+    function btnSs6FullViewClick(){
+        btnSs6FullView.click(function(e){
+            console.log('btnSs6FullView clicked');
+            e.preventDefault();
+        });
+    };
+    
+    return{setModalEventListeners : setModalEventListeners};
 })();
 
 var ClientSideValidator = (function(){
