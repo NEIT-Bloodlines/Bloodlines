@@ -18,8 +18,8 @@ abstract class Page{
     protected $homeViews = array('homeNavBar.php',
                                  'landingSection.php',
                                  'aboutSection.php',
+                                 'screenshotsSection.php',
                                  'creditsSection.php',
-                                 'technicalSection.php',
                                  'homeModals.php');
     
     protected $authenticantionPaths = array('authenticationNavBar.php',

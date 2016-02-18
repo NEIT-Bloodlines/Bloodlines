@@ -1,13 +1,13 @@
 <?php
 /* 
- * Developed by: DavidLandi 1/25/16
+ * Developed by: Natick Patel, 1/25/16
  * Purpose: 
  * Refactored By: (Name Date Reason)
  */
 
-class StatisticsModel extends MasterModel
+class GameModel extends MasterModel
 {
-    //data passed to the home index view
+    //data passed to the Game index view
     public function index()
     {   
         $this->setPageTitle();
@@ -18,17 +18,15 @@ class StatisticsModel extends MasterModel
     
     private function setJSpath(){
         $this->viewModel->set("script",
-                '<script src="public/js/statisticsPage.js"></script>');
+                '<script src="public/js/preGamePage.js"></script>');
     }
     
     private function setCSSpath(){
         $this->viewModel->set('stylesheet', 
-                '<link href="public/css/styleStatistics.css" rel="stylesheet">');
+                '<link href="public/css/stylePregame.css" rel="stylesheet">');
     }
     
     private function setPageTitle(){
-        $this->viewModel->set("pageTitle","Bloodlines|Ranks");
+        $this->viewModel->set("pageTitle","Bloodlines|Pregame");
     }
 }
-
-

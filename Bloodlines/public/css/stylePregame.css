@@ -1,0 +1,23 @@
+/* 
+    Created on : Feb 16, 2016, 7:11:40 PM
+    Author     : David landi
+*/
+
+#host_game{}
+.host_game_content{}
+#lobby{}
+.lobby_content{}
+.pnl_loggedin_size{}
+.pnl_chat_size{}
+.stat_box{width: 100%; min-height: 200px;}
+
+/*At > 13 inches*/
+@media(min-width:768px){
+    #host_game{}
+    .host_game_content{}
+    #lobby{}
+    .lobby_content{}
+    .stat_box{}
+    .pnl_loggedin_size{min-height: 600px;}
+    .pnl_chat_size{min-height: 600px;}
+}

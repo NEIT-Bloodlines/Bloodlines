@@ -1,5 +1,7 @@
 <?php 
+/*this could also be called in the controller but it seems to load quicker when 
+done here */
 require("api/PageBuilder.php");
 $homePage = new PageAuthentication();
-?>
-<script src="public/js/authenticationPage.js"></script>
+
+echo $viewModel->get('script');

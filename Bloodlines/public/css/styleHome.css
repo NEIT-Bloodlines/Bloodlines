@@ -1,0 +1,60 @@
+/* 
+    Created on : Feb 16, 2016, 7:13:04 PM
+    Author     : David landi
+*/
+
+
+#about{}
+.aboutBLsize{max-width:600px;}
+.about_content{max-width:1500px;}
+.bl_logo{
+    text-shadow: 1px 1px 5px #fff, 5px 5px 5px #000000, 5px 5px 20px #000000;
+    font-family: 'pillbox';
+    font-size: 100px;
+}
+.bl_slogan{
+    text-shadow: 1px 1px 5px #fff, 1px 2px 2px #000000;
+    font-family: 'gmr';
+    font-size: 30px;
+}
+.btn_cust{margin-top:25px;}
+#credits{}
+.dev_icon{font-size:45px;}
+#landing{color: #D91E18; text-align: center;}
+.mkTransparent{opacity: 0.9;}
+.img-portfolio {
+    margin-bottom: 30px;
+}
+#screenshots{background-color: #2980b9;}
+.screenshots_content{color:#fff; text-shadow:1px 1px 5px #222;}
+
+/*At > 13 inches*/
+@media(min-width:768px){
+    .landing_content{padding-top:250px;}
+    .bl_logo{font-size: 250px;}
+    .bl_slogan{font-size: 35px;}
+    .dev_icon{font-size:75px;}
+    .credits_contents{padding-top:320px;}
+    #about{height: 70%;}
+    .about_content{padding-top:200px;}
+    #credits{
+        background-image: url(../img/creditBG.jpg);
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        height:100%;
+    }
+    #landing{
+        background-image: url(../img/headBG.jpg);
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        height:100%;
+    }
+    #screenshots{height: 90%;}
+    .screenshots_content{padding-top:  100px;}
+}

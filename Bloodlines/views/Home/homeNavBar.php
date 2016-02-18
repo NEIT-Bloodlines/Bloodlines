@@ -11,24 +11,18 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="#page-top">Bloodlines</a>
+<a class="navbar-brand page-scroll" href="#landing">Bloodlines</a>
 </div>
 <div class="collapse navbar-collapse" id="nd_collapse">
 <ul class="nav navbar-nav navbar-right">
-<li class="hidden">
-<a href="#page-top"></a>
-</li>
 <li class="page-scroll">
 <a href="#about">About</a>
 </li>
 <li class="page-scroll">
-<a href="#manual">Credits</a>
+<a href="#screenshots">Screenshots</a>
 </li>
 <li class="page-scroll">
-<a href="#manual">Manual</a>
-</li>
-<li class="page-scroll">
-<a href="#rankings">Rankings</a>
+<a href="#credits">Credits</a>
 </li>
 <li>
 <a href="/Authentication">Login</a>

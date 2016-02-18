@@ -50,6 +50,7 @@
                     <div class="panel-heading">Chat</div>
                     <div class="panel-body pnl_chat_size">
                         <!-- TODO: PHP will need to implement chatroom -->
+                        <div id="chat-area"></div>
                     </div>
                     <div class="panel-footer">
                         <form class="form-horizontal" role="form" action="">

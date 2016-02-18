@@ -23,8 +23,10 @@
 <!-- FontAwsome CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <!-- blCustom CSS -->
-<link href="public/css/blCustom.css" rel="stylesheet">
+<link href="public/css/globalStyle.css" rel="stylesheet">
+<?php echo $viewModel->get('stylesheet'); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="public/js/bootstrap.min.js"></script>
 </head>
 <body>
