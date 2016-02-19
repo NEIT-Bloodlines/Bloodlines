@@ -14,34 +14,23 @@
                 <hr>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="#fullsizeImage">
-                    <img class="img-responsive img-portfolio img-hover one-edge-shadow" src="http://placehold.it/700x450" alt="">
-                </a>
+
+                <img class="img-responsive img-portfolio img-hover" id="btnSs1FullView" src="../public/img/bloodlinesOfficalMap.jpg" alt="">
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="fullsizeImage">
-                    <img class="img-responsive img-portfolio img-hover one-edge-shadow" src="http://placehold.it/700x450" alt="">
-                </a>
+                <img class="img-responsive img-portfolio img-hover" id="btnSs2FullView" src="../public/img/landingScreen.jpg" alt="">
+            </div>
+            <div class="col-md-4 col-sm-6">                
+                <img class="img-responsive img-portfolio img-hover" id="btnSs3FullView" src="http://placehold.it/700x450" alt="">
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="fullsizeImage">
-                    <img class="img-responsive img-portfolio img-hover one-edge-shadow" src="http://placehold.it/700x450" alt="">
-                </a>
+                <img class="img-responsive img-portfolio img-hover" id="btnSs4FullView" src="http://placehold.it/700x450" alt="">
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="fullsizeImage">
-                    <img class="img-responsive img-portfolio img-hover one-edge-shadow" src="http://placehold.it/700x450" alt="">
-                </a>
+                <img class="img-responsive img-portfolio img-hover" id="btnSs5FullView" src="http://placehold.it/700x450" alt="">
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="fullsizeImage">
-                    <img class="img-responsive img-portfolio img-hover one-edge-shadow" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover one-edge-shadow" src="http://placehold.it/700x450" alt="">
-                </a>
+                <img class="img-responsive img-portfolio img-hover" id="btnSs6FullView" src="http://placehold.it/700x450" alt="">
             </div>
         </div>
     </div>

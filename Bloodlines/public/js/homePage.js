@@ -27,12 +27,14 @@ var ModalHandler = (function(){
         btnSs4FullViewClick();
         btnSs5FullViewClick();
         btnSs6FullViewClick();
+        btnSs1FullViewHover();
     };
     
     function btnSs1FullViewClick(){
         btnSs1FullView.click(function(e){
             console.log('btnSs1FullView clicked');
             e.preventDefault();
+            ss1FullView.modal('show');
         });
     };
     
@@ -40,6 +42,7 @@ var ModalHandler = (function(){
         btnSs2FullView.click(function(e){
             console.log('btnSs2FullView clicked');
             e.preventDefault();
+            ss2FullView.modal('show');
         });
     };
     
@@ -47,6 +50,7 @@ var ModalHandler = (function(){
         btnSs3FullView.click(function(e){
             console.log('btnSs3FullView clicked');
             e.preventDefault();
+            ss3FullView.modal('show');
         });
     };
     
@@ -54,6 +58,7 @@ var ModalHandler = (function(){
         btnSs4FullView.click(function(e){
             console.log('btnSs4FullView clicked');
             e.preventDefault();
+            ss4FullView.modal('show');
         });
     };
     
@@ -61,6 +66,7 @@ var ModalHandler = (function(){
         btnSs5FullView.click(function(e){
             console.log('btnSs5FullView clicked');
             e.preventDefault();
+            ss5FullView.modal('show');
         });
     };
     
@@ -68,6 +74,7 @@ var ModalHandler = (function(){
         btnSs6FullView.click(function(e){
             console.log('btnSs6FullView clicked');
             e.preventDefault();
+            ss6FullView.modal('show');
         });
     };
     
@@ -131,4 +138,5 @@ $(document).ready(function(){
 	if(user.browser.family === 'Safari'){
 		$(".objSize").hide();
 	}
+        ModalHandler.setModalEventListeners();
 });

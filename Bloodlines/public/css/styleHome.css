@@ -22,11 +22,16 @@
 .dev_icon{font-size:45px;}
 #landing{color: #D91E18; text-align: center;}
 .mkTransparent{opacity: 0.9;}
+.img-hover:hover{opacity: 0.5; cursor:zoom-in;}
+
+
+
 .img-portfolio {
+    min-height: 250px;
     margin-bottom: 30px;
 }
-#screenshots{background-color: #2980b9;}
-.screenshots_content{color:#fff; text-shadow:1px 1px 5px #222;}
+#screenshots{background-color: #222;}
+.screenshots_content{color:#fff; text-shadow:1px 1px 5px #fff;}
 
 /*At > 13 inches*/
 @media(min-width:768px){
@@ -55,6 +60,7 @@
         -o-background-size: cover;
         height:100%;
     }
+    .modal-lg{min-width: 1200px; margin-top: 100px;}
     #screenshots{height: 90%;}
     .screenshots_content{padding-top:  100px;}
 }
