@@ -187,6 +187,42 @@ var ClientSideValidator = (function(){
     return{executeClientSideValidator : executeClientSideValidator};
 })();
 
+var ExternalLinksHandler = (function(){
+    var btnDlLinkedin = $('#btnDlLinkedin');
+    var btnNpLinkedin = $('#btnNpLinkedin');
+    var btnJbLinkedin = $('#btnJbLinkedin');
+    
+    var setLinkEventListeners = function(){
+        btnDlLinkedinClick();
+        btnNpLinkedinClick();
+        btnJbLinkedinClick();
+    };
+    function btnDlLinkedinClick(){
+        btnDlLinkedin.click(function(){
+            var url = '';
+            console.log('btnDlLinkedinClick');
+            window.open(url);
+        });
+    };
+    
+    function btnNpLinkedinClick(){
+        btnNpLinkedin.click(function(){
+            var url = '';
+            console.log('btnNpLinkedinClick');
+            window.open(url);
+        });
+    };
+    
+    function btnJbLinkedinClick(){
+        btnJbLinkedin.click(function(){
+            var url = '';
+            console.log('btnJbLinkedinClick');
+            window.open(url);
+        });
+    };
+    return{setLinkEventListeners : setLinkEventListeners};
+})();
+
 var EmailHandler = (function(){
     var executeEmailHandler = function(){
         
@@ -221,7 +257,7 @@ var ErrorMsg = (function(){
            getErrorTextAreaNull : getErrorTextAreaNull};
 })();
 
-// Method for handeling page scrolling
+// TODO this chunk of code needs to be moved to 271
 $(function() {
     $('body').on('click', '.page-scroll a', function(event) {
         var $anchor = $(this);
@@ -238,4 +274,5 @@ $(document).ready(function(){
 		$(".objSize").hide();
 	}
         ModalHandler.setModalEventListeners();
+        ExternalLinksHandler.setLinkEventListeners();
 });
