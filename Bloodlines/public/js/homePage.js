@@ -19,6 +19,24 @@ var ModalHandler = (function(){
     var btnSs4FullView = $('#btnSs4FullView');
     var btnSs5FullView = $('#btnSs5FullView');
     var btnSs6FullView = $('#btnSs6FullView');
+    var btnNpEmail = $('#btnNpEmail');
+    var btnDlEmail = $('#btnDlEmail');
+    var btnJbEmail = $('#btnDlEmail');
+    var mdlNpEmail = $('#npEmail');
+    var mdlDlEmail = $('#dlEmail');
+    var mdlJbEmail = $('#jbEmail');
+    var btnNpCode = $('#btnNpcode');
+    var btnDlCode = $('#btnDlcode');
+    var btnJbCode = $('#btnJbCode');
+    var mdlNpCode = $('#npCode');
+    var mdlDlCode = $('#dlCode');
+    var mdlJbCode = $('#jbCode');
+    var btnNpSummary = $('#btnNpSummary');
+    var btnDlSummary = $('#btnDlSummary');
+    var btnJbSummary = $('#btnJbSummary');
+    var mdlNpSummary = $('#npSummary');
+    var mdlDlSummary = $('#dlSummary');
+    var mdlJbSummary = $('#jbSummary');
     
     var setModalEventListeners = function(){
         btnSs1FullViewClick();
@@ -28,6 +46,87 @@ var ModalHandler = (function(){
         btnSs5FullViewClick();
         btnSs6FullViewClick();
         btnSs1FullViewHover();
+        btnNpEmailClick();
+        btnDlEmailClick();
+        btnJbEmailClick();
+        btnNpCodeClick();
+        btnDlCodeClick();
+        btnJbCodeClick();
+        btnNpSummaryClick();
+        btnDlSummaryClick();
+        btnJbSummaryClick();
+    };
+    
+    function btnNpSummaryClick(){
+        btnNpSummary.click(function(e){
+            console.log('btnNpSummaryClick');
+            e.preventDefault();
+            mdlNpSummary.show();
+        });
+    };
+    
+    function btnDlSummaryClick(){
+        btnDlSummary.click(function(e){
+            console.log('btnDlSummaryClick');
+            e.preventDefault();
+            mdlDlSummary.show();
+        });
+    };
+    
+    function btnJbSummaryClick(){
+        btnJbSummary.click(function(e){
+            console.log('btnJbSummaryClick');
+            e.preventDefault();
+            mdlJbSummary.show();
+        });
+    };
+    
+    function btnNpCodeClick(){
+        btnNpCode.click(function(e){
+            console.log('btnNpCodeClick');
+            e.preventDefault();
+            mdlNpCode.show();
+        });
+    };
+    
+    function btnDlCodeClick(){
+        btnDlCode.click(function(e){
+            console.log('btnDlCodeClick');
+            e.preventDefault();
+            mdlDlCode.show();
+        });
+    };
+    
+    function btnJbCodeClick(){
+        btnJbCode.click(function(e){
+            console.log('btnJbCodeClick');
+            e.preventDefault();
+            mdlJbCode.show();
+        });
+    };
+    
+    function btnNpEmailClick(){
+        btnNpEmail.click(function(e){
+            console.log('btnNpEmailClick');
+            e.preventDefault();
+            mdlNpEmail.show();
+        });
+    };
+    
+    function btnDlEmailClick(){
+        btnDlEmail.click(function(e){
+            console.log('btnDlEmailClick');
+            e.preventDefault();
+            mdlDlEmail.show();
+        });
+    };
+    
+    function btnJbEmailClick(){
+        btnJbEmail.click(function(e){
+            console.log('btnJbEmailClick');
+            e.preventDefault();
+            mdlJbEmail.show();
+        });
     };
     
     function btnSs1FullViewClick(){
