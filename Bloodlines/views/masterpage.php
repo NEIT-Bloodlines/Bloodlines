@@ -29,7 +29,7 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="public/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body onload="<?php echo $viewModel->get('bodytag'); ?>">
 
 
 <?php require($this->viewFile); #echo $this->viewFile;?>    

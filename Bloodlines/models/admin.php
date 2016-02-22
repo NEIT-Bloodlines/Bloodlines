@@ -13,6 +13,7 @@ class AdminModel extends MasterModel
         $this->setPageTitle();
         $this->setCSSpath();
         $this->setJSpath();
+        $this->setBodyTag();
         return $this->viewModel;
     }
     
@@ -28,6 +29,10 @@ class AdminModel extends MasterModel
     
     private function setPageTitle(){
         $this->viewModel->set("pageTitle","Bloodlines|Admin");
+    }
+    
+    private function setBodyTag(){
+        $this->viewModel->set("bodytag","");
     }
 }
 

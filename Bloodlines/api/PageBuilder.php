@@ -74,7 +74,7 @@ class PagePreGame extends Page{
     
     protected function buildPage(){
         $basePath = 'views/PreGame/';
-        foreach($this->authenticantionPaths as $fileName){
+        foreach($this->preGamePaths as $fileName){
             require($basePath . $fileName);
             #echo($basePath . $fileName);
         }

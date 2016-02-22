@@ -10,7 +10,7 @@
 ?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-<div class="container">
+<div class="container-fluid nav_width">
 <div class="navbar-header page-scroll">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nd_collapse">
 <span class="sr-only">Toggle navigation</span>
@@ -22,26 +22,23 @@
 </div>
 <div class="collapse navbar-collapse" id="nd_collapse">
 <ul class="nav navbar-nav navbar-right">
-<li class="hidden">
-<a href="#page-top"></a>
-</li>
-<li class="page-scroll">
-<a href="#">Main Lobby</a>
-</li>
-<li class="page-scroll">
-<a href="#">Host Game</a>
-</li>
-<li class="page-scroll">
-<a href="#">Join Game</a>
+<li>
+<a href="#" id="lobbyLink">Main Lobby</a>
 </li>
 <li>
-<a href="#">Manual</a>
+<a href="#" id="hostGameLink">Host Game</a>
+</li>
+<li>
+<a href="#" id="joinGameLink">Join Game</a>
+</li>
+<li>
+<a href="#" id="btnManualModel">Manual</a>
 </li>
 <li>
 <a href="/Statistics">Stats</a>
 </li>
 <li>
-<a href="#">Help</a>
+<a href="#" id="btnHelpModal">Help</a>
 </li>
 <li>
 <a href="#">Sign Out</a>

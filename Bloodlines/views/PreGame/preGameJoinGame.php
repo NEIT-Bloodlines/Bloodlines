@@ -13,7 +13,7 @@
  *  */
 ?>
 
-<section id="join_game">
+<section id="joinGame" class="hidden">
     <div class="container join_game_content">
         <div class="row">
             <div class="col-sm-12 col-md-3">
@@ -49,31 +49,27 @@
                                     <!-- TODO: add image -->
                                 </div>
                             </div> 
-                            <div class="container"> 
+                           
                                 <div class="row">
                                     <!-- TODO: Need shied icons -->
-                                    <p>Select your families crest</p>
-                                    <div class="col-sm-3 col-md-3 col-lg-3">
-                                        <button type="button" class="btn btn-block btn-default" 
-                                                id="btn_red_shield">TODO</button>
+                                    <p class="text-center">Select your families crest</p>
+                                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                        <img class="img-responsive img-circle sheild center-block" id="btnDragonSheild" src="../public/img/dragonSheild.jpg" alt="">
                                     </div>
 
-                                    <div class="col-sm-3 col-md-3 col-lg-3">
-                                        <button type="button" class="btn btn-block btn-default" 
-                                                id="btn_blue_shield">TODO</button>
+                                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                        <img class="img-responsive img-circle sheild center-block" id="btnTreeSheild" src="../public/img/treeSheild.jpg" alt="">
                                     </div>
 
-                                    <div class="col-sm-3 col-md-3 col-lg-3">
-                                        <button type="button" class="btn btn-block btn-default" 
-                                                id="btn_black_shield">TODO</button>
+                                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                        <img class="img-responsive img-circle sheild center-block" id="btnMountainSheild" src="../public/img/mountainShield.jpg" alt="">
                                     </div>
 
-                                    <div class="col-sm-3 col-md-3 col-lg-3">
-                                        <button type="button" class="btn btn-block btn-default" 
-                                                id="btn_white_shield">TODO</button>
+                                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                        <img class="img-responsive img-circle sheild center-block" id="btnBoatSheild" src="../public/img/boatShield.jpg" alt="">
                                     </div>
                                 </div><!-- End row -->   
-                            </div>
+                        
                             <button type="button" class="btn btn-block btn-primary frm_btn" 
                                     id="btn_join_game">Submit</button>
                         </form>

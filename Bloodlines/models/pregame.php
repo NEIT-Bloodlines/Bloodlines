@@ -13,12 +13,13 @@ class GameModel extends MasterModel
         $this->setPageTitle();
         $this->setCSSpath();
         $this->setJSpath();
+        $this->setBodyTag();
         return $this->viewModel;
     }
     
     private function setJSpath(){
         $this->viewModel->set("script",
-                '<script src="public/js/preGamePage.js"></script>');
+                '<script src="chatroomApp/chatroomController.js"></script>');
     }
     
     private function setCSSpath(){
@@ -28,5 +29,9 @@ class GameModel extends MasterModel
     
     private function setPageTitle(){
         $this->viewModel->set("pageTitle","Bloodlines|Pregame");
+    }
+    
+    private function setBodyTag(){
+        $this->viewModel->set("bodytag","setInterval('chat.update()',1000)");
     }
 }

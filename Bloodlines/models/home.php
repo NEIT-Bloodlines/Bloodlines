@@ -13,6 +13,7 @@ class HomeModel extends MasterModel
         $this->setPageTitle();
         $this->setCSSpath();
         $this->setJSpath();
+        $this->setBodyTag();
         return $this->viewModel;
     }
     
@@ -28,5 +29,9 @@ class HomeModel extends MasterModel
     
     private function setPageTitle(){
         $this->viewModel->set("pageTitle","Bloodlines|Home");
+    }
+    
+    private function setBodyTag(){
+        $this->viewModel->set("bodytag","");
     }
 }

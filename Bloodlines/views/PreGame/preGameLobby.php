@@ -13,8 +13,8 @@
  * Modifed by: (Name, Reason, Date)
  *  */
 ?>
-<section id="lobby">
-    <div class="container lobby_content">
+<section id="lobby" class="dynamic">
+    <div class="container statscontainer">
         <div class="row">
             <!-- stats containers -->
             <div class="col-sm-6 col-md-3 col-lg-3">
@@ -43,7 +43,8 @@
             </div>
             <!-- /stats containers -->
         </div>
-        
+    </div>
+    <div class="container-fluid chatcontainer">
         <div class="row">
             <div class="col-sm-12 col-md-9 col-lg-9">
                 <div class="panel panel-default">
@@ -83,7 +84,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 </section>
 

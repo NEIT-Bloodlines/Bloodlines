@@ -13,6 +13,7 @@ class GameModel extends MasterModel
         $this->setPageTitle();
         $this->setCSSpath();
         $this->setJSpath();
+        $this->setBodyTag();
         return $this->viewModel;
     }
     
@@ -28,6 +29,10 @@ class GameModel extends MasterModel
     
     private function setPageTitle(){
         $this->viewModel->set("pageTitle","Bloodlines|Game");
+    }
+    
+    private function setBodyTag(){
+        $this->viewModel->set("bodytag","");
     }
 }
 

@@ -14,6 +14,7 @@ class AuthenticationModel extends MasterModel
         $this->setPageTitle();
         $this->setCSSpath();
         $this->setJSpath();
+        $this->setBodyTag();
         return $this->viewModel;
     }
     
@@ -29,5 +30,9 @@ class AuthenticationModel extends MasterModel
     
     private function setPageTitle(){
         $this->viewModel->set("pageTitle","Bloodlines|Ranks");
+    }
+    
+    private function setBodyTag(){
+        $this->viewModel->set("bodytag","");
     }
 }

@@ -5,14 +5,14 @@
  * Refactored By: (Name Date Reason)
  */
 
-class GameController extends MasterController
+class PregameController extends MasterController
 {
     //add to the parent constructor
     public function __construct($action, $urlRoutePath) {
         parent::__construct($action, $urlRoutePath);
         
         //create the model object
-        require("models/game.php");
+        require("models/pregame.php");
         $this->model = new GameModel();
     }
     
