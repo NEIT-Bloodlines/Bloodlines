@@ -21,16 +21,16 @@
                     <p class="dev_icon"><i class="fa fa-user-secret"></i></p>
                 </div>
             <div class="panel-footer text-center">
-                <button type="button" class="btn btn-danger btn-sm" id="JBsummary" title="Summary">
+                <button type="button" class="btn btn-danger btn-sm" id="btnJbSummary" title="Summary">
                         <i class="fa fa-rss"></i>
                 </button>
-                <button type="button" class="btn btn-danger btn-sm" id="JBcode" title="development credits">
+                <button type="button" class="btn btn-danger btn-sm" id="btnJbCode" title="development credits">
                         <i class="fa fa-file-code-o"></i>
                 </button>
-                <button type="button" class="btn btn-danger btn-sm" id="JBlinkedin" title="linkedIn">
+                <button type="button" class="btn btn-danger btn-sm" id="btnJbLinkedin" title="linkedIn">
                         <i class="fa fa-linkedin-square"></i>
                 </button>
-                <button type="button" class="btn btn-danger btn-sm" id="JBemail" title="email">
+                <button type="button" class="btn btn-danger btn-sm" id="btnJbEmail" title="email">
                         <i class="fa fa-envelope"></i>
                 </button>
             </div>
@@ -45,16 +45,16 @@
                     <p class="dev_icon"><i class="fa fa-user-secret"></i></p>
                 </div>
             <div class="panel-footer text-center">
-                    <button type="button" class="btn btn-danger btn-sm" id="NPsummary" title="Summary">
+                    <button type="button" class="btn btn-danger btn-sm" id="btnNpSummary" title="Summary">
                             <i class="fa fa-rss"></i>
                     </button>
-                    <button type="button" class="btn btn-danger btn-sm" id="NPcode" title="development credits">
+                    <button type="button" class="btn btn-danger btn-sm" id="btnNpCode" title="development credits">
                             <i class="fa fa-file-code-o"></i>
                     </button>
-                    <button type="button" class="btn btn-danger btn-sm" id="NPlinkedin" title="linkedIn">
+                    <button type="button" class="btn btn-danger btn-sm" id="btnNpLinkedin" title="linkedIn">
                             <i class="fa fa-linkedin-square"></i>
                     </button>
-                    <button type="button" class="btn btn-danger btn-sm" id="NPemail" title="email">
+                    <button type="button" class="btn btn-danger btn-sm" id="btnNpEmail" title="email">
                             <i class="fa fa-envelope"></i>
                     </button>
             </div>
@@ -69,16 +69,16 @@
                     <p class="dev_icon"><i class="fa fa-user-secret"></i></p>
                 </div>
             <div class="panel-footer text-center">
-                    <button type="button" class="btn btn-danger btn-sm" id="DLsummary" title="Summary">
+                    <button type="button" class="btn btn-danger btn-sm" id="btnDlSummary" title="Summary">
                             <i class="fa fa-rss"></i>
                     </button>
-                    <button type="button" class="btn btn-danger btn-sm" id="DLcode" title="development credits">
+                    <button type="button" class="btn btn-danger btn-sm" id="btnDlCode" title="development credits">
                             <i class="fa fa-file-code-o"></i>
                     </button>
-                    <button type="button" class="btn btn-danger btn-sm" id="DLlinkedin" title="linkedIn">
+                    <button type="button" class="btn btn-danger btn-sm" id="btnDlLinkedin" title="linkedIn">
                             <i class="fa fa-linkedin-square"></i>
                     </button>
-                    <button type="button" class="btn btn-danger btn-sm" id="DLemail" title="email">
+                    <button type="button" class="btn btn-danger btn-sm" id="btnDlEmail" title="email">
                             <i class="fa fa-envelope"></i>
                     </button>
             </div>
