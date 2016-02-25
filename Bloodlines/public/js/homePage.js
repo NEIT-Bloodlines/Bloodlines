@@ -45,7 +45,6 @@ var ModalHandler = (function(){
         btnSs4FullViewClick();
         btnSs5FullViewClick();
         btnSs6FullViewClick();
-        btnSs1FullViewHover();
         btnNpEmailClick();
         btnDlEmailClick();
         btnJbEmailClick();

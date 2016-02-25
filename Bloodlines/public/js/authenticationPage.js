@@ -93,7 +93,7 @@ var AuthControlsHandler = (function(){
     };
 	
     function displayAlertPswFieldsNotMatch(){
-        if(isPasswordFieldsAmatch()){
+        if(!isPasswordFieldsAmatch()){
                 alertwelcomeSU.addClass('hidden');
                 alertPswFieldsNotMatch.removeClass('hidden');
         }
@@ -101,7 +101,7 @@ var AuthControlsHandler = (function(){
     };
 	
     function displayAlertMoreThanOneNullSU(){
-        if(totalNull() >= 0){
+        if(totalNull() > 0){
             alertwelcomeSU.addClass('hidden');
             alertMoreThanOneNullSU.removeClass('hidden');
         }
@@ -175,7 +175,7 @@ var AuthControlsHandler = (function(){
             count++;
         }
 
-        console.log(count + ' null fields')
+        console.log(count + ' null fields');
         return count;
     };
 	
