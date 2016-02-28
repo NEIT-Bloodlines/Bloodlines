@@ -12,6 +12,8 @@ html, body {
 	margin:0;
 	padding: 0;
 }
+
+.mdl_btn{color:#fff;}
 .nav_width{max-width:1600px;}
 
 .navbar-brand{

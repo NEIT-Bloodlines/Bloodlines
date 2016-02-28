@@ -11,7 +11,7 @@
  *  */
 ?>
 
-<section id="host_game" class="hidden">
+<section id="hostGame" class="hidden">
     <div class="container host_game_content">
         <div class="row">
             <div class="col-sm-12 col-md-4"><!-- Left col -->

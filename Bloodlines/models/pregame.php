@@ -24,7 +24,8 @@ class GameModel extends MasterModel
     
     private function setCSSpath(){
         $this->viewModel->set('stylesheet', 
-                '<link href="public/css/stylePregame.css" rel="stylesheet">');
+                '<link href="public/css/stylePregame.css" rel="stylesheet">'.
+                "<link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet' type='text/css'>");
     }
     
     private function setPageTitle(){

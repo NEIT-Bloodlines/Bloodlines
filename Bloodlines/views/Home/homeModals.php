@@ -49,7 +49,7 @@
                 <h4><strong>TODO: add img title here</strong></h4>
             </div><!--/modal-header-->
             <div class="modal-body">
-                <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                <img class="img-responsive modal_img" src="../public/img/publicChat.jpg" alt="">
             </div>
         </div>
     </div>

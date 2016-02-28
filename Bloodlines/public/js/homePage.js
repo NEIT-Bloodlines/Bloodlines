@@ -179,13 +179,6 @@ var ModalHandler = (function(){
     return{setModalEventListeners : setModalEventListeners};
 })();
 
-var ClientSideValidator = (function(){
-    var executeClientSideValidator = function(){
-        
-    };
-    return{executeClientSideValidator : executeClientSideValidator};
-})();
-
 var ExternalLinksHandler = (function(){
     var btnDlLinkedin = $('#btnDlLinkedin');
     var btnNpLinkedin = $('#btnNpLinkedin');

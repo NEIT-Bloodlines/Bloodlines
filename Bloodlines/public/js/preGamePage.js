@@ -19,6 +19,10 @@ var PregameEvent = (function(){
     var manualModel = $('#manualModel');
     var btnManualModel = $('#btnManualModel');
     var btnHelpModal = $('#btnHelpModal');
+    var btnPublicChatInfo = $('#btnPublicChatInfo');
+    var btnMembersLoggedInInfo = $('#btnMembersLoggedInInfo');
+    var mdlPublicChatInfo = $('#mdlPublicChatInfo');
+    var mdlMembersLoggedInInfo = $('#mdlMembersLoggedInInfo');
     
     var onLobbyLinkClick = function(){
         lobbyLink.click(function(e){
@@ -49,7 +53,7 @@ var PregameEvent = (function(){
         btnHelpModal.click(function(e){
             console.log('onBtnHelpModalClick');
             e.preventDefault();
-            displayHelpModal();
+            displayModal(helpModal);
         });
     };
     
@@ -57,16 +61,28 @@ var PregameEvent = (function(){
         btnManualModel.click(function(e){
             console.log('onBtnManualModelClick');
             e.preventDefault();
-            displayManualModal();
+            displayModal(manualModel);
         });
     };
     
-    function displayHelpModal(){
-        helpModal.modal('show');
+    var onBtnMembersLoggedInInfoClick = function(){
+        btnMembersLoggedInInfo.click(function(e){
+            console.log('onBtnManualModelClick');
+            e.preventDefault();
+            displayModal(mdlMembersLoggedInInfo);
+        });
     };
     
-    function displayManualModal(){
-        manualModel.modal('show');
+    var onBtnPublicChatInfoClick = function(){
+        btnPublicChatInfo.click(function(e){
+            console.log('onBtnPublicChatInfoClick');
+            e.preventDefault();
+            displayModal(mdlPublicChatInfo);
+        });
+    };
+    
+    function displayModal(id){
+        id.modal('show');
     };
 
     function displayLobbySection(){
@@ -109,8 +125,168 @@ var PregameEvent = (function(){
         onHostGameLinkClick : onHostGameLinkClick,
         onJoinGameLinkClick : onJoinGameLinkClick,
         onBtnHelpModalClick : onBtnHelpModalClick,
-        onBtnManualModelClick : onBtnManualModelClick
+        onBtnManualModelClick : onBtnManualModelClick,
+        onBtnMembersLoggedInInfoClick : onBtnMembersLoggedInInfoClick,
+        onBtnPublicChatInfoClick : onBtnPublicChatInfoClick
     };
+})();
+
+//Join Game Events
+JoinGameEventHandler = (function(){
+    var btnEnterGame = $('#btnEnterGame');
+    var btnBack = $('#btnBack');
+    var btnNext = $('#btnNext');
+    var progressBar = $('.progress-bar');
+    var pnlSectionFamilyShield = $('#pnlSectionFamilyShield');
+    var btnShield1 = $('#btnShield1');
+    var btnShield2 = $('#btnShield2');
+    var btnShield3 = $('#btnShield3');
+    var btnShield4 = $('#btnShield4');
+    var msgShieldSection = $('#msgShieldSection');
+    var txtTitle = $('#txtTitle');
+    var txtLogan = $('#txtLogan');
+    var txtSirName = $('#txtSirName');
+    var pnlSectionFamilyData = $('#pnlSectionFamilyData');
+    var btnGamePassword = $('#btnGamePassword');
+    var txtGamePassword = $('#txtGamePassword');
+    var pnlSectionJoinGame = $('#pnlSectionJoinGame');
+    var btnDisplayMdlJoinGames = $('#btnDisplayMdlJoinGames');
+    var mdlJoinGames = $('#mdlJoinGames');
+    var count = 1;
+    
+    var setJoinGameClickEvents = function(){
+        onBtnBackClick();
+        onBtnNextClick();
+        onBtnShield1Click();
+        onBtnShield2Click();
+        onBtnShield3Click();
+        onBtnShield4Click();
+        onBtnDisplayMdlJoinGames();
+        onBtnGamePassword();
+        onBtnEnterGame();
+    };
+    
+    function onBtnEnterGame(){
+        btnEnterGame.click(function(e){
+            console.log('onBtnEnterGame');
+            e.preventDefault();
+            //TODO: use javascript to navigate user to game page.
+        });
+    };
+    
+    function onBtnGamePassword(){
+        btnGamePassword.click(function(e){
+           console.log('onBtnGamePassword');
+           e.preventDefault();
+           var usrInput = txtGamePassword.val();
+           //TODO: Check DB to see if Game id and password meet usr input
+        });
+    };
+    
+    function onBtnDisplayMdlJoinGames(){
+        btnDisplayMdlJoinGames.click(function(e){
+            console.log('onBtnDisplayMdlJoinGames');
+            e.preventDefault();
+            mdlJoinGames.show();
+        });
+    };
+    
+    function onBtnShield1Click(){
+        btnShield1.click(function(e){
+            console.log('onBtnShield1Click');
+            e.preventDefault();
+            //TODO: 
+                // Add data to local stroage 
+                // Update game table on server
+        });
+    };
+    
+    function onBtnShield2Click(){
+        btnShield2.click(function(e){
+            console.log('onBtnShield2Click');
+            e.preventDefault();
+            //TODO: 
+                // Add data to local stroage 
+                // Update game table on server
+        });
+    };
+    
+    function onBtnShield3Click(){
+        btnShield3.click(function(e){
+            console.log('onBtnShield3Click');
+            e.preventDefault();
+            //TODO: 
+                // Add data to local stroage 
+                // Update game table on server
+        });
+    };
+    
+    function onBtnShield4Click(){
+        btnShield4.click(function(e){
+            console.log('onBtnShield4Click');
+            e.preventDefault();
+            //TODO: 
+                // Add data to local stroage 
+                // Update game table on server
+        });
+    };
+    
+    function onBtnBackClick(){
+        btnBack.click(function(e){
+            console.log('onBtnBackClick');
+            e.preventDefault();
+            if(count > 1){
+                count = count -1;
+                displayPanelBody();
+            }
+        });
+    };
+    
+    function onBtnNextClick(){
+        btnNext.click(function(e){
+            console.log('onBtnNextClick');
+            e.preventDefault();
+            if(count < 3){
+                count = count + 1;
+                displayPanelBody();
+            }
+            
+        });
+    };
+    
+    function displayPanelBody(){
+        switch(count){
+            case 1: 
+                console.log(count);
+                pnlSectionFamilyData.addClass('hidden');
+                pnlSectionFamilyShield.addClass('hidden');
+                pnlSectionJoinGame.removeClass('hidden');
+                progressBar.css('width', '10%');
+                btnEnterGame.addClass('hidden');
+                btnNext.removeClass('hidden');
+                break;
+            case 2:
+                console.log(count);
+                pnlSectionFamilyShield.addClass('hidden');
+                pnlSectionJoinGame.addClass('hidden');
+                pnlSectionFamilyData.removeClass('hidden');
+                progressBar.css('width', '50%');
+                btnEnterGame.addClass('hidden');
+                btnNext.removeClass('hidden');
+                break;
+            case 3:
+                console.log(count);
+                pnlSectionJoinGame.addClass('hidden');
+                pnlSectionFamilyData.addClass('hidden');
+                pnlSectionFamilyShield.removeClass('hidden');
+                progressBar.css('width', '95%');
+                btnNext.addClass('hidden');
+                btnEnterGame.removeClass('hidden');
+                break;
+        }
+    };
+
+    return {setJoinGameClickEvents : setJoinGameClickEvents};
 })();
 
 //Object that contains validation methods for chatrooms
@@ -154,9 +330,13 @@ var ChatroomValidator = (function(){
 })();
 
 $( document ).ready(function(){
+    $('#bgmusic').hide();
+    PregameEvent.onBtnMembersLoggedInInfoClick();
+    PregameEvent.onBtnPublicChatInfoClick();
     PregameEvent.onHostGameLinkClick();
     PregameEvent.onJoinGameLinkClick();
     PregameEvent.onLobbyLinkClick();
     PregameEvent.onBtnHelpModalClick();
     PregameEvent.onBtnManualModelClick();
+    JoinGameEventHandler.setJoinGameClickEvents();
 });

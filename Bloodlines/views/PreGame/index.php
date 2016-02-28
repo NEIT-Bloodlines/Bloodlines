@@ -1,9 +1,18 @@
 <?php 
+/*Justin: When the user is logged in I need you to store the username in seesion
+ *        So i can then remove the alert box for the user to enter in name for the 
+ *        chatroom
+ *  */
 require("api/PageBuilder.php");
 $homePage = new PagePreGame();
 
 echo $viewModel->get('script');
 ?>
+<audio controls autoplay loop id="bgmusic">
+  
+  <source src="public/music/mlMusic.mp3" type="audio/mpeg">
+  <p>If you can read this, your browser does not support the audio element.</p>
+</audio>
 <script src="public/js/preGamePage.js"></script>
 <script type="text/javascript">
 
