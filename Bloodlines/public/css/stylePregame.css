@@ -22,13 +22,19 @@
 .mountain_sheild{background-image: url(../img/mountainShield.jpg); height: 200px; width: 200px; margin:20px;}
 .boat_sheild{background-image: url(../img/boatShield.jpg); height: 200px; width: 200px; margin: 20px;}
 
-#host_game{}
-.host_game_content{}
+#hostGame{
+    width:100%;
+    height:100%;
+    background-image: url(../img/hostgamebg.jpg);
+    background-position: center;
+}
+.host_game_content{max-width: 1500px; padding-top: 200px;}
 #joinGame{
     width:100%;
     height:100%;
     background-image: url(../img/joingamebg.jpg);
     background-position: center;
+    ; 
 }
 
 #lobby{

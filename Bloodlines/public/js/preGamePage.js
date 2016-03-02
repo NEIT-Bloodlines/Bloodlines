@@ -131,8 +131,214 @@ var PregameEvent = (function(){
     };
 })();
 
+var HostGameEventHandler = (function(){
+    var pgv = PregameValidation;
+    var pgu = PregameUtils;
+    var count = 1;
+    
+    //Setting ID's for Game options panel
+    // Game Desc body
+    var bdyGameDesc = $('#bdyGameDesc');
+    var msgGameDesc = $('#msgGameDesc');
+    var txtGameTitleGO = $('#txtGameTitleGO');
+    var txtGamePasswordGO = $('#txtGamePasswordGO');
+    
+    // Game Options body
+    var bdyGameOptions = $('#bdyGameOptions');
+    var msgGameOptions = $('#msgGameOptions');
+    var ddmSetNumberOfPlayers = $('#ddmSetNumberOfPlayers');
+    var ddmSetTurnTime = $('ddmSetTurnTime');
+    var ddmSetGameType = $('#ddmSetGameType');
+    
+    // Family Data body
+    var bdyFamilyData = $('#bdyFamilyData');
+    var msgFamilyData = $('#msgFamilyData');
+    var txtSirNameGO = $('txtSirNameGO');
+    var txtTitleGO = $('#txtTitleGO');
+    
+    // Shield Selection body
+    var bdyShieldSelection = $('#bdyShieldSelection');
+    var msgShieldSelection = $('#msgShieldSelection');
+    var btnShield1GO = $('#btnShield1GO');
+    var btnShield2GO = $('#btnShield2GO');
+    var btnShield3GO = $('#btnShield3GO');
+    var btnShield4GO = $('#btnShield4GO');
+    
+    // Panel Header
+    var btnDisplayMdlHostInfo = $('#btnDisplayMdlHostInfo');
+    
+    // Panel Footer
+    var btnBackGO = $('btnBackGO');
+    var progressBarGO = $('#progressBarGO');
+    var btnNextGO = $('#btnNextGO');
+    
+    function addCount(){
+        if(count < 4){
+            count = count + 1;
+        }
+    };
+    
+    function minusCount(){
+        if(count > 1){
+            count = count -1;
+        }
+    };
+    
+    function verifyTxtTitleGO(){
+        if(pgv.executeFieldValidation(txtTitleGO)){
+            var error = 'Error: Invalid game title.';
+            pgu.modifyPanelMessageToErrMsg(msgFamilyData, error);
+            pgu.clearField(txtGameTitleGO);
+            return false;
+        }
+        return true;
+    };
+    
+    function verifyTxtSirNameGO(){
+        if (pgv.executeFieldValidation(txtSirNameGO)){
+            var error = 'Error: Invalid game title.';
+            pgu.modifyPanelMessageToErrMsg(msgFamilyData, error);
+            pgu.clearField(txtSirNameGO);
+            return false;
+        }
+        return true;
+    };
+    
+    function verifyTxtGameTitleGO(){
+        if(pgv.executeFieldValidation(txtGameTitleGO)){
+            var error = 'Error: Invalid game title.';
+            pgu.modifyPanelMessageToErrMsg(msgGameDesc, error);
+            pgu.clearField(txtGameTitleGO);
+            return false;
+        }
+        return true;
+    };
+    
+    function verifyTxtGamePasswordGO(){
+        if(pgv.executeFieldValidation(txtGamePasswordGO)){
+            var error = 'Error: Invalid game password';
+            pgu.modifyPanelMessageToErrMsg(msgGameDesc, error);
+            pgu.clearField(txtGamePasswordGO);
+            return false;
+        }
+        return true;
+    };
+    
+    function displayPanelBody(){
+        switch(count){
+            case 1:
+                if(verifyTxtGameTitleGO() && verifyTxtGamePasswordGO()){
+                    bdyGameOptions.addClass('hidden');
+                    bdyFamilyData.addClass('hidden');
+                    bdyShieldSelection.addClass('hidden');
+                    bdyGameDesc.removeClass('hidden');
+                }
+                else{minusCount();}
+                break;
+            case 2:
+                bdyGameDesc.addClass('hidden');
+                bdyFamilyData.addClass('hidden');
+                bdyShieldSelection.addClass('hidden');
+                bdyGameOptions.removeClass('hidden');
+                break;
+            case 3:
+                if(verifyTxtTitleGO() && verifyTxtSirNameGO()){
+                    bdyGameDesc.addClass('hidden');
+                    bdyGameOptions.addClass('hidden');
+                    bdyShieldSelection.addClass('hidden');
+                    bdyFamilyData.removeClass('hidden');
+                }
+                else{minusCount();}
+                break;
+            case 4:
+                bdyGameDesc.addClass('hidden');
+                bdyGameOptions.addClass('hidden');
+                bdyFamilyData.addClass('hidden');
+                bdyShieldSelection.removeClass('hidden');
+                break;
+        }
+    };
+    
+    function onBtnNextClick(){
+        addCount();
+        displayPanelBody();
+    };
+    
+    function onBtnBackClick(){
+        minusCount();
+        displayPanelBody();
+
+    };
+    
+    function onBtnDisplayMdlHostInfoClick(){};
+    
+    function onBtnDisplayMdlReviewClick(){};
+    
+    function onBtnDisplayMdlMemberClick(){};
+    
+    function onBtnDisplayMdlInvitesClick(){};
+    
+})();
+
+var PregameUtils = (function(){
+    var modifyPanelMessageToErrMsg = function(msgID, msg){
+        msgID.removeClass('alert-success');
+        msgID.addClass('alert-danger');
+        msgID.children('p').text(msg);
+    };
+    
+    var displayModal = function(modalID){
+        modalID.show();
+    };
+    
+    var clearField = function(fieldID){
+        fieldID.val('');
+    };
+    return{
+        modifyPanelMessageToErrMsg : modifyPanelMessageToErrMsg,
+        clearField : clearField
+    };
+})();
+
+/*Obj for validating fields. To use call the public method executeFieldValidation
+ * and pass in the fields id.  This method will run all of the validiton functions
+ * for fields.  It will return true if a field is invalid.*/
+var PregameValidation = (function(){
+    var fieldID;
+    var fieldValidationMethods = [fieldContainsHtml, fieldIsNull, 
+        fieldContainsProfanity];
+    
+    var executeFieldValidation = function(id){
+        fieldID = id;
+        $(fieldValidationMethods).each(function(key, val){
+            return val() === true;
+        });
+        return false;
+    };
+    
+    function fieldContainsHtml(fieldID){
+        var regx = '/(<([^>]+)>)/ig';
+        return regx.text(fieldID.val());
+    };
+    
+    function fieldIsNull(fieldID){
+        return fieldID.length < 1;
+    };
+    
+    function fieldContainsProfanity(fieldID){
+        var hasProfanity = false;
+        var lowertxtmsg = fieldID.val().toLowerCase();
+        var profanity = ["fuck", "shit", "bitch", 
+            "cunt", "fucking", "fuckyou", "gay", "retard", "retarted", "function"];
+        for(var i=0; i < profanity.length; i++){
+            hasProfanity = lowertxtmsg.test(profanity[i]);
+        }
+        return hasProfanity;
+    };
+    return{executeFieldValidation : executeFieldValidation};
+})();
 //Join Game Events
-JoinGameEventHandler = (function(){
+var JoinGameEventHandler = (function(){
     var btnEnterGame = $('#btnEnterGame');
     var btnBack = $('#btnBack');
     var btnNext = $('#btnNext');
