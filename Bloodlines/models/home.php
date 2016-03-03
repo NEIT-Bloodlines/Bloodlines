@@ -14,6 +14,7 @@ class HomeModel extends MasterModel
         $this->setCSSpath();
         $this->setJSpath();
         $this->setBodyTag();
+        $this->setTest();
         return $this->viewModel;
     }
     
@@ -33,5 +34,9 @@ class HomeModel extends MasterModel
     
     private function setBodyTag(){
         $this->viewModel->set("bodytag","");
+    }
+    
+    private function setTest(){
+        $this->viewModel->set("tst","this is a test");
     }
 }

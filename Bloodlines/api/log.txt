@@ -1,0 +1,261 @@
+Building Home Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 56
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90
+factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: C:\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: C:\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 90

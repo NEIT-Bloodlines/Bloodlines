@@ -4,7 +4,7 @@
  *        chatroom
  *  */
 require("api/PageBuilder.php");
-$homePage = new PagePreGame();
+$homePage = new PagePreGame($viewModel);
 
 echo $viewModel->get('script');
 ?>

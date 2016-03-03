@@ -132,7 +132,7 @@ var PregameEvent = (function(){
 })();
 
 var HostGameEventHandler = (function(){
-    var count = 0;
+    var count = 1;
     
     //Panel modals
     var btnDisplayMdlHostInfo = $('#btnDisplayMdlHostInfo');
@@ -200,99 +200,112 @@ var HostGameEventHandler = (function(){
     function verifyTxtTitleGO(){
         console.log('verify txtTitle');
         if(PregameValidation.executeFieldValidation(txtTitleGO)){
-            console.log('tst fail');
             var error = 'Error: Invalid game title.';
             PregameUtils.modifyPanelMessageToErrMsg(msgFamilyData, error);
             PregameUtils.clearField(txtTitleGO);
             return false;
         }
-        console.log('tst pass');
         return true;
     };
     
     function verifyTxtSirNameGO(){
         console.log('verify txtSirName');
         if (PregameValidation.executeFieldValidation(txtSirNameGO)){
-            console.log('tst fail');
             var error = 'Error: Invalid game title.';
             PregameUtils.modifyPanelMessageToErrMsg(msgFamilyData, error);
             PregameUtils.clearField(txtSirNameGO);
             return false;
         }
-        console.log('tst pass');
         return true;
     };
     
     function verifyTxtGameTitleGO(){
         console.log('verify txtGameTitle');
         if(PregameValidation.executeFieldValidation(txtGameTitleGO)){
-            console.log('tst fail');
             var error = 'Error: Invalid game title.';
             PregameUtils.modifyPanelMessageToErrMsg(msgGameDesc, error);
             PregameUtils.clearField(txtGameTitleGO);
             return false;
         }
-        console.log('tst pass');
         return true;
     };
     
     function verifyTxtGamePasswordGO(){
         console.log('verify txtGamePassword');
         if(PregameValidation.executeFieldValidation(txtGamePasswordGO)){
-            console.log('tst fail');
             var error = 'Error: Invalid game password';
             PregameUtils.modifyPanelMessageToErrMsg(msgGameDesc, error);
             PregameUtils.clearField(txtGamePasswordGO);
             return false;
         }
-        console.log('tst pass');
         return true;
     };
     
-    function displayPanelBody(){
+    function displayPanelBody(isAdd){
+        if(isAdd){addCount();}
+        else{minusCount();}
         switch(count){
             case 1:
-                console.log(count);
-                if(verifyTxtGameTitleGO() && verifyTxtGamePasswordGO()){
-                    bdyGameOptions.addClass('hidden');
-                    bdyFamilyData.addClass('hidden');
-                    bdyShieldSelection.addClass('hidden');
-                    bdyGameDesc.removeClass('hidden');
-                }
-                else{minusCount();}
+                minusCount();
+                displayBodyGameDescription();
+                progressBarGO.css('width', '10%');
                 break;
             case 2:
-                console.log(count);
-                bdyGameDesc.addClass('hidden');
-                bdyFamilyData.addClass('hidden');
-                bdyShieldSelection.addClass('hidden');
-                bdyGameOptions.removeClass('hidden');
-                break;
-            case 3:
-                console.log(count);
-                if(verifyTxtTitleGO() && verifyTxtSirNameGO()){
-                    bdyGameDesc.addClass('hidden');
-                    bdyGameOptions.addClass('hidden');
-                    bdyShieldSelection.addClass('hidden');
-                    bdyFamilyData.removeClass('hidden');
+                if(verifyTxtGameTitleGO() === true && verifyTxtGamePasswordGO() === true){
+                    displayBodyGameOptions();
+                    progressBarGO.css('width', '50%');
                 }
-                else{minusCount();}
+                 break;
+            case 3:
+                displayBodyFamilyData();  
+                progressBarGO.css('width', '75%');
                 break;
             case 4:
-                bdyGameDesc.addClass('hidden');
-                bdyGameOptions.addClass('hidden');
-                bdyFamilyData.addClass('hidden');
-                bdyShieldSelection.removeClass('hidden');
+                if(verifyTxtSirNameGO() === true && verifyTxtTitleGO() === true){
+                    displayBodyFamilyShield();
+                    progressBarGO.css('width', '95%');
+                }
                 break;
         }
+    };
+    
+    function displayBodyGameDescription(){
+        console.log('bdyGameDesc is valid');
+        bdyGameOptions.addClass('hidden');
+        bdyFamilyData.addClass('hidden');
+        bdyShieldSelection.addClass('hidden');
+        bdyGameDesc.removeClass('hidden');
+    };
+    
+    function displayBodyGameOptions(){
+        console.log('bdyGameOptions is valid');
+        bdyGameDesc.addClass('hidden');
+        bdyFamilyData.addClass('hidden');
+        bdyShieldSelection.addClass('hidden');
+        bdyGameOptions.removeClass('hidden');
+    };
+    
+    function displayBodyFamilyData(){
+        console.log('bdyFamilyData is valid');
+        bdyGameDesc.addClass('hidden');
+        bdyGameOptions.addClass('hidden');
+        bdyShieldSelection.addClass('hidden');
+        bdyFamilyData.removeClass('hidden');
+    };
+    
+    function displayBodyFamilyShield(){
+        console.log('bdyShieldSelection is valid');
+        bdyGameDesc.addClass('hidden');
+        bdyGameOptions.addClass('hidden');
+        bdyFamilyData.addClass('hidden');
+        bdyShieldSelection.removeClass('hidden');
     };
     
     function onBtnNextClick(){
         btnNextGO.click(function(e){
             console.log('onBtnNextClick');
-            e.preventDefault();
-            addCount();
-            displayPanelBody();         
+            e.preventDefault(); 
+            if(displayPanelBody(true) === false && count > 1){minusCount();}          
         });
     };
     
@@ -301,7 +314,7 @@ var HostGameEventHandler = (function(){
             console.log('onBtnBackClick');
             e.preventDefault();
             minusCount();
-            displayPanelBody();
+            if(displayPanelBody(false) === false){addCount();}
         });
     };
     
@@ -310,7 +323,8 @@ var HostGameEventHandler = (function(){
     };
     
     function onBtnDisplayMdlReviewSubmitInfoClick(){
-        PregameUtils.displayModal(btnDisplayMdlReviewSubmitInfo, mdlReviewSubmitInfo);
+        PregameUtils.displayModal(btnDisplayMdlReviewSubmitInfo, 
+            mdlReviewSubmitInfo);
     };
     
     function onBtnDisplayMdlMapSelectionClick(){
@@ -355,37 +369,48 @@ var PregameUtils = (function(){
  * and pass in the fields id.  This method will run all of the validiton functions
  * for fields.  It will return true if a field is invalid.*/
 var PregameValidation = (function(){
-    var fieldID;
+    var fieldID = '';
     
     var executeFieldValidation = function(id){
         fieldID = id;
         console.log(fieldID);
-        isValid = true;
+        isNotValid = false;
         
-        if(!fieldContainsHtml() && !fieldIsNull() && !fieldContainsProfanity){
-            return true;
+        while(!isNotValid){
+            isNotValid = fieldIsNull();
+            isNotValid = fieldContainsHtml();
+            isNotValid = fieldContainsProfanity();
+            break;
         }
-        return false;
+        return isNotValid;
     };
     
     function fieldContainsHtml(){
-        var regx = new RegExp('/(<([^>]+)>)/ig');
-        return regx.test(fieldID.val());
+        var regx = '/(<([^>]+)>)/ig';
+        var txt = fieldID.val();
+        if(regx.match(txt)){
+            return true;
+        }
     };
     
     function fieldIsNull(){
-        return fieldID.length < 1;
+        if (fieldID.length < 1){
+            console.log(fieldID.length);
+            return true;
+        }
     };
     
     function fieldContainsProfanity(){
+        console.log('checked');
         var hasProfanity = false;
+        
         var lowertxtmsg = fieldID.val().toLowerCase();
         var profanity = ["fuck", "shit", "bitch", 
             "cunt", "fucking", "fuckyou", "gay", "retard", "retarted", "function"];
         for(var i=0; i < profanity.length; i++){
-            hasProfanity = lowertxtmsg.test(profanity[i]);
+            var regx = profanity[i];
+            if(regx.match(lowertxtmsg)){return true;}
         }
-        return hasProfanity;
     };
     return{executeFieldValidation : executeFieldValidation};
 })();

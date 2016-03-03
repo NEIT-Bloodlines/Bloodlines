@@ -21,9 +21,9 @@
                         <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlHostInfo"></i></span>
                     </div>
                     
-                    <div id="bdyGameDesc" class="panel-body">
+                    <div id="bdyGameDesc" class="panel-body pnlbsize">
                         <form class="form-horizontal" role="form">                           
-                            <div id="msgGameDesc" class="alert alert-success fade in">
+                            <div id="msgGameDesc" class="alert alert-success fade in text-justify">
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             <p>In this section you will set the name of the game which will be displayed to the other members.<br>
                                If you are planning to make this game private you will need to set a password for the game. 
@@ -46,9 +46,9 @@
                         </form>
                     </div>
                     
-                    <div id="bdyGameOptions" class="panel-body hidden">
+                    <div id="bdyGameOptions" class="panel-body pnlbsize hidden">
                         <form class="form-horizontal" role="form">
-                            <div id="msgGameOptions" class="alert alert-success fade in">
+                            <div id="msgGameOptions" class="alert alert-success fade in text-justify">
                                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                                 <p>In this section you will set the game option for number of players, maximum turn time and game type.<br>
                                     The minium amount of players to start a game is 2. The maximum is 4.<br>
@@ -76,9 +76,9 @@
                         </form>
                     </div>
                     
-                    <div id="bdyFamilyData" class="panel-body hidden">
+                    <div id="bdyFamilyData" class="panel-body pnlbsize hidden">
                         <form class="form-horizontal" role="form">
-                            <div id="msgFamilyData" class="alert alert-success fade in">
+                            <div id="msgFamilyData" class="alert alert-success fade in text-justify">
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             <p>Here you will set your families last name which is also known as Sir name.<br>
                                 You will also set your title. For example Lord, Knight etc. 
@@ -101,9 +101,9 @@
                         </form>
                     </div>
                     
-                    <div id="bdyShieldSelection" class="panel-body hidden">
+                    <div id="bdyShieldSelection" class="panel-body pnlbsize hidden">
                         
-                        <div id="msgShieldSelection" class="alert alert-success fade in">
+                        <div id="msgShieldSelection" class="alert alert-success fade in text-justify">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <p>You have reached the final step to host a new game. Here you will select one of the 4 shields that will 
                             represent your family. 
@@ -142,11 +142,18 @@
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Game Board Selection
+                        Step 2: Select Members To Invite
                         <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlMapSelection"></i></span>
                     </div>
-                    <div class="panel-body">
-                        
+                    <div class="panel-body pnlbsize">
+                        <div id="msgInviteMembers" class="alert alert-success fade in text-justify">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <p>
+                            If you selected to create a private game there will be a drop down menu's for you to select
+                            the member you would like to invite. Once you have made your selection be click the confirm
+                            button and continue to step 3.
+                        </p>
+                        </div>
                     </div>
                     <div class="panel-footer">
                         
@@ -158,11 +165,17 @@
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Active Member List
+                        Step 3: Map Selection
                         <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlInviteInfo"></i></span>
                     </div>
-                    <div class="panel-body">
-                        
+                    <div class="panel-body pnlbsize">
+                        <div id="msgMapSelection" class="alert alert-success fade in text-justify">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <p>
+                            Currently, there is only one map. We will inform all bloodline members by email when new maps 
+                            become available.  Please continue to the final step.
+                        </p>
+                        </div>
                     </div>
                     <div class="panel-footer">
                         
@@ -172,12 +185,19 @@
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Game Inventations
+                        Step 4: Review and Confirm 
                         
                         <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlReviewSubmitInfo"></i></span>
                     </div>
-                    <div class="panel-body">
-                        
+                    <div class="panel-body pnlbsize">
+                        <div id="msgReviewConfirm" class="alert alert-success fade in text-justify">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <p>
+                            Please review the data below. If correct, click the host game button. If you made this
+                            a private game, the members you selected will be sent a email invite to your game. You 
+                            will be placed in the in game chat lobby until all of the players have joined.
+                        </p>
+                        </div>
                     </div>
                     <div class="panel-footer">
                         
