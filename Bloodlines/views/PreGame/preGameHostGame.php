@@ -48,7 +48,7 @@
                     
                     <div id="bdyGameOptions" class="panel-body hidden">
                         <form class="form-horizontal" role="form">
-                            <div id="msgGameOptions" class="alert alert-danger fade in">
+                            <div id="msgGameOptions" class="alert alert-success fade in">
                                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                                 <p>In this section you will set the game option for number of players, maximum turn time and game type.<br>
                                     The minium amount of players to start a game is 2. The maximum is 4.<br>
@@ -78,7 +78,7 @@
                     
                     <div id="bdyFamilyData" class="panel-body hidden">
                         <form class="form-horizontal" role="form">
-                            <div id="msgFamilyData" class="alert alert-danger fade in">
+                            <div id="msgFamilyData" class="alert alert-success fade in">
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             <p>Here you will set your families last name which is also known as Sir name.<br>
                                 You will also set your title. For example Lord, Knight etc. 
@@ -103,7 +103,7 @@
                     
                     <div id="bdyShieldSelection" class="panel-body hidden">
                         
-                        <div id="msgShieldSelection" class="alert alert-danger fade in">
+                        <div id="msgShieldSelection" class="alert alert-success fade in">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <p>You have reached the final step to host a new game. Here you will select one of the 4 shields that will 
                             represent your family. 
@@ -111,10 +111,10 @@
                         </div>
                         <form class="form-inline" role="form">
                         <div class="text-center">
-                            <button id="btnShield1GO" class="btn btn-lg dragon_sheild" type="button"></button>
-                            <button id="btnShield2GO" class="btn btn-lg tree_sheild" type="button"></button>
-                            <button id="btnShield3GO" class="btn btn-lg mountain_sheild" type="button"></button>
-                            <button id="btnShield4GO" class="btn btn-lg boat_sheild" type="button"></button>
+                            <button id="btnShield1GO" class="btn btn-lg tssheildHG" type="button"></button>
+                            <button id="btnShield2GO" class="btn btn-lg bssheildHG" type="button"></button>
+                            <button id="btnShield3GO" class="btn btn-lg dssheildHG" type="button"></button>
+                            <button id="btnShield4GO" class="btn btn-lg mssheildHG" type="button"></button>
                         </div>
                         </form>
                     </div>
@@ -143,7 +143,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Game Board Selection
-                        <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlGameBoardInfo"></i></span>
+                        <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlMapSelection"></i></span>
                     </div>
                     <div class="panel-body">
                         
@@ -159,7 +159,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Active Member List
-                        <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayActiveMemberInfo"></i></span>
+                        <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlInviteInfo"></i></span>
                     </div>
                     <div class="panel-body">
                         
@@ -174,7 +174,7 @@
                     <div class="panel-heading">
                         Game Inventations
                         
-                        <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayGameInviteInfo"></i></span>
+                        <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlReviewSubmitInfo"></i></span>
                     </div>
                     <div class="panel-body">
                         

@@ -22,6 +22,11 @@
 .mountain_sheild{background-image: url(../img/mountainShield.jpg); height: 200px; width: 200px; margin:20px;}
 .boat_sheild{background-image: url(../img/boatShield.jpg); height: 200px; width: 200px; margin: 20px;}
 
+.tssheildHG{background-image: url(../img/tsHostGame.jpg);  margin: 20px; height:80px; width:80px;}
+.bssheildHG{background-image: url(../img/bsHostGame.jpg); margin: 20px; height:80px; width:80px;}
+.dssheildHG{background-image: url(../img/dsHostGame.jpg); margin: 20px; height:80px; width:80px;}
+.mssheildHG{background-image: url(../img/msHostGame.jpg); margin:20px; height:80px; width:80px;}
+
 #hostGame{
     width:100%;
     height:100%;
@@ -34,7 +39,6 @@
     height:100%;
     background-image: url(../img/joingamebg.jpg);
     background-position: center;
-    ; 
 }
 
 #lobby{
@@ -89,6 +93,8 @@
     font-family:'Nosifer', cursive;
     text-shadow: 1px 1px 9px #fff;
 }
+
+
 
 /*At > 13 inches*/
 @media(min-width:768px){

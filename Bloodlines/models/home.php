@@ -14,6 +14,7 @@ class HomeModel extends MasterModel
         $this->setCSSpath();
         $this->setJSpath();
         $this->setBodyTag();
+        $this->setTestString();
         return $this->viewModel;
     }
     
