@@ -84,6 +84,23 @@ class PageGame extends Page{
     }
 }
 
+class PageAuthentication extends Page{
+    protected $viewmodel;
+    public function __construct($viewmodel){
+        $this->viewmodel = $viewmodel;
+        $this->buildPage();
+    }
+    
+    protected function buildPage(){
+        Logger::writeToLog('Building Pregame Page', __LINE__, __FILE__);
+        $basePath = 'views/Authentication/';
+        foreach($this->authenticantionPaths as $fileName){
+            $templateData = $this->viewmodel; 
+            require($basePath . $fileName);
+        }
+    }
+}
+
 class PagePreGame extends Page{
     protected $viewmodel;
     public function __construct($viewmodel){
