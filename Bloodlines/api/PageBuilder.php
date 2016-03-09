@@ -41,6 +41,11 @@ abstract class Page{
     protected $statisticsPaths = array('statsNavBar.php', 
                                        'statsCoreContent.php');
     
+    protected $gamePaths = array('waitingLobby.php', 
+                                 'gameInterface.php', 
+                                 'outlook.php',
+                                 'imageMap.php');
+    
     abstract protected function buildPage();
 }
 
@@ -62,17 +67,17 @@ class PageHome extends Page{
     }
 }
 
-class PageAuthentication extends Page{
+class PageGame extends Page{
     protected $viewmodel;
     public function __construct($viewmodel){
         $this->viewmodel = $viewmodel;
-        $this->buildPage();;
+        $this->buildPage();
     }
     
     protected function buildPage(){
-        Logger::writeToLog('Building Authentication Page', __LINE__, __FILE__);
-        $basePath = 'views/Authentication/';
-        foreach($this->authenticantionPaths as $fileName){
+        Logger::writeToLog('Building Game Page', __LINE__, __FILE__);
+        $basePath = 'views/Game/';
+        foreach($this->gamePaths as $fileName){
             $templateData = $this->viewmodel; 
             require($basePath . $fileName);
         }

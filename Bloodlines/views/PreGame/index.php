@@ -13,6 +13,8 @@ echo $viewModel->get('script');
   <source src="public/music/mlMusic.mp3" type="audio/mpeg">
   <p>If you can read this, your browser does not support the audio element.</p>
 </audio>
+<script src="public/js/pregameData.js"></script>
+<script src="public/js/validator.js"></script>
 <script src="public/js/preGamePage.js"></script>
 <script type="text/javascript">
 

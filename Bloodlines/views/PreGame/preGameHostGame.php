@@ -1,4 +1,4 @@
-<?php
+9+<?php
 /* 
  * Developer: David Landi
  * Created: 2/6/16
@@ -14,7 +14,7 @@
 <section id="hostGame" class="hidden">
     <div class="container-fluid host_game_content">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Step 1: Set Game Options
@@ -47,7 +47,7 @@
                     </div>
                     
                     <div id="bdyGameOptions" class="panel-body pnlbsize hidden">
-                        <form class="form-horizontal" role="form">
+                        <form class="form-inline text-center" role="form">
                             <div id="msgGameOptions" class="alert alert-success fade in text-justify">
                                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                                 <p>In this section you will set the game option for number of players, maximum turn time and game type.<br>
@@ -59,20 +59,30 @@
 
                                 </p>
                             </div>
-                            <button class="btn btn-default dropdown-toggle" id="ddmSetNumberOfPlayers" type="button" 
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Set number of players <span class="caret"></span>
-                            </button>
-
-                            <button class="btn btn-default dropdown-toggle" id="ddmSetTurnTime" type="button" 
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Set max turn time <span class="caret"></span>
-                            </button>
-
-                            <button class="btn btn-default dropdown-toggle" id="ddmSetGameType" type="button" 
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Set game type <span class="caret"></span>
-                            </button>        
+                            <div class="form-group">
+                                
+                                <select class="form-control" id="ddmSetNumberOfPlayers">
+                                    <option>Set number of players</option>
+                                    <option>2 players</option>
+                                    <option>3 players</option>
+                                    <option>4 players</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="ddmSetTurnTime">
+                                    <option>Set turn time</option>
+                                    <option>2 minutes</option>
+                                    <option>3 minutes</option>
+                                    <option>4 minutes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="ddmSetGameType">
+                                    <option>Set game type</option>
+                                    <option>Public</option>
+                                    <option>Private</option>
+                                </select>
+                            </div>
                         </form>
                     </div>
                     
@@ -118,6 +128,57 @@
                         </div>
                         </form>
                     </div>
+                    <div id="bdyInviteSelection" class="panel-body pnlbsize hidden">
+                        
+                        <div id="msgInviteSelection" class="alert alert-success fade in text-justify">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <p>You have reached the final step to host a new game. Here you will select one of the 4 shields that will 
+                            represent your family. 
+                        </p>
+                        </div>
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                
+                                <select class="form-control" id="ddmSetInvite2">
+                                    <option>Player 2</option>
+                                    <?php //need a list of members logged in ?>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control hidden" id="ddmSetInvite3">
+                                    <option>Player 3</option>
+                                    <?php //need a list of members logged in ?>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control hidden" id="ddmSetInvite4">
+                                    <option>Player 4</option>
+                                    <?php //need a list of members logged in ?>
+                                </select>
+                            </div>
+                            
+                            <div class="input-group frm_input_space">
+                            <span class="input-group-addon" id="baMsg"><i class="fa fa-fort-awesome"></i></span>
+                            <input type="text" class="form-control" id="txtPersonMsg" 
+                                   placeholder="Enter a personal message to send with invite" 
+                                   aria-describedby="baMsg">
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div id="bdyConfirmSetting" class="panel-body pnlbsize hidden">
+                        
+                        <div id="msgConfirmSettings" class="alert alert-success fade in text-justify">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <p> 
+                            Confirm and review
+                        </p>
+                        </div>
+                        
+                        <div id="gameSettingsData">
+                            
+                        </div>
+                    </div>
                     <div class="panel-footer addmarg">
                         <div class="row">
                             <div class="col-md-3">
@@ -134,76 +195,14 @@
                             </div>
                             <div class="col-md-3">
                                 <button type="button" class="btn btn-default btn-block" id="btnNextGO">Next <i class="fa fa-angle-double-right"></i></button>
+                                
+                                <button type="button" class="btn btn-default btn-block hidden" id="btnHostGame">Host Game</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Step 2: Select Members To Invite
-                        <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlMapSelection"></i></span>
-                    </div>
-                    <div class="panel-body pnlbsize">
-                        <div id="msgInviteMembers" class="alert alert-success fade in text-justify">
-                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                        <p>
-                            If you selected to create a private game there will be a drop down menu's for you to select
-                            the member you would like to invite. Once you have made your selection be click the confirm
-                            button and continue to step 3.
-                        </p>
-                        </div>
-                    </div>
-                    <div class="panel-footer">
-                        
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Step 3: Map Selection
-                        <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlInviteInfo"></i></span>
-                    </div>
-                    <div class="panel-body pnlbsize">
-                        <div id="msgMapSelection" class="alert alert-success fade in text-justify">
-                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                        <p>
-                            Currently, there is only one map. We will inform all bloodline members by email when new maps 
-                            become available.  Please continue to the final step.
-                        </p>
-                        </div>
-                    </div>
-                    <div class="panel-footer">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Step 4: Review and Confirm 
-                        
-                        <span class="pull-right"><i class="fa fa-info-circle" id="btnDisplayMdlReviewSubmitInfo"></i></span>
-                    </div>
-                    <div class="panel-body pnlbsize">
-                        <div id="msgReviewConfirm" class="alert alert-success fade in text-justify">
-                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                        <p>
-                            Please review the data below. If correct, click the host game button. If you made this
-                            a private game, the members you selected will be sent a email invite to your game. You 
-                            will be placed in the in game chat lobby until all of the players have joined.
-                        </p>
-                        </div>
-                    </div>
-                    <div class="panel-footer">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </section>

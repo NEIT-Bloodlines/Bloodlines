@@ -5,3 +5,4 @@ require("api/PageBuilder.php");
 $homePage = new PageAuthentication($viewModel);
 
 echo $viewModel->get('script');
+
