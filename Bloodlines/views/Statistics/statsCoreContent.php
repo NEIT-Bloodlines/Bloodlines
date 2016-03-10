@@ -3,15 +3,21 @@
  * Developer: David Landi
  * Created: 2/10/16
  * Purpose: HTML for stats page
+ * 
+ * Developer: Justin Barreira
+ * Created: 3/1/16
+ * Purpose: PHP to return top players list
+ * 
  * TODO: 
  *      - Complete all php and js todos 
  * Modifed by: (Name, Reason, Date)
  *  */
+$stats = $templateData->get('stats');
 ?>
 <div class="jumbotron text-center">
     <p class="bl_logo">BLOODLINES</p>
     <p>Power Rankings</p>
-    <p>Number One Ranked Member: </p><?php //TODO: Get number 1 ranked member ?>
+    <p>Number One Ranked Member: </p><?php echo $stats[0]['username'] ?>
 </div>
 <div class="container">
     <div class="panel panel-default">
@@ -26,13 +32,20 @@
                       <th>Total Games</th>
                       <th>Won</th>
                       <th>Lost</th>
-                      <th>DNF%</th>
+
                     </tr>
                 </thead>
                 <tbody>
-                    <?php //TODO: call function that will generate rows and data 
-                          //for table. Each row must be in this format:
-                          // <tr><td>Username</td><td>Rank</td><td>Total Games</td><td>Won</td><td>Lost</td><td>DNF</td></tr> 
+                    <?php                    
+                        foreach($stats as $stat => $value){
+                            echo '<tr>'
+                            . '<td>'. $value['username'] .'</td>'
+                            . '<td>'. ($stat+1) .'</td>'
+                            . '<td>'. ($value['wins'] + $value['losses']) .'</td>'
+                            . '<td>'. $value['wins'] .'</td>'
+                            . '<td>'. $value['losses'] .'</td>'
+                            . '</tr>';
+                        }
                     ?>
                 </tbody>
             </table>

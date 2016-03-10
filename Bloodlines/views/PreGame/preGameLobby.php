@@ -12,6 +12,9 @@
  *      - css
  * Modifed by: (Name, Reason, Date)
  *  */
+echo 'test';
+$loggedInMembers = $templateData->get('loggedInMembersUsernames');
+
 ?>
 <section id="lobby" class="dynamic">
     <div class="container-fluid statscontainer">
@@ -20,25 +23,25 @@
             <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="stat_box text-center">
                     <h4 class="stat_lbl">Members Logged In</h4>
-                    <p>5</p><!-- TODO: php will need to populate this from DB -->
+                    <p><?php echo $templateData->get('loggedInMembers'); ?></p><!-- TODO: php will need to populate this from DB -->
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="stat_box text-center">
                     <h4 class="stat_lbl">Games In Progress</h4>
-                    <p>10</p><!-- TODO: php will need to populate this from DB -->
+                    <p><?php echo $templateData->get('gamesInProgress'); ?></p><!-- TODO: php will need to populate this from DB -->
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="stat_box text-center">
                     <h4 class="stat_lbl">Joinable Games</h4>
-                    <p>16</p><!-- TODO: php will need to populate this from DB -->
+                    <p><?php echo $templateData->get('joinableGames'); ?></p><!-- TODO: php will need to populate this from DB -->
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="stat_box text-center">
                     <h4 class="stat_lbl">Top Ranked Member</h4>
-                    <p>David Landi</p><!-- TODO: php will need to populate this from DB -->
+                    <p><?php echo $templateData->get('topRankedMember'); ?></p><!-- TODO: php will need to populate this from DB -->
                 </div>
             </div>
             <!-- /stats containers -->
@@ -74,7 +77,11 @@
                         <span class="pull-right btnMembersLoggedInInfo"><i class="fa fa-info-circle" id="btnMembersLoggedInInfo"></i></span>
                     </div>
                     <div class="panel-body pnl_loggedin_size">
-                        <!-- TODO: PHP will need to populate a list of all members logged in -->
+                        <?php
+                            foreach($loggedInMembers as $member){
+                                echo $member['username'].'<br />';                        
+                            }
+                        ?><!-- TODO: PHP will need to populate a list of all members logged in -->
                     </div>
                     <div class="panel-footer">
                         <form class="form-horizontal" role="form" action="">

@@ -1,16 +1,9 @@
-Building Home Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 61
-factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
-Determined control: authenticationAuthenticationController@: C:\xampp\htdocs\api\Factory.php Line#: 47
-process action for authentication@: C:\xampp\htdocs\api\Factory.php Line#: 25
-factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
-Determined control: authenticationAuthenticationController@: C:\xampp\htdocs\api\Factory.php Line#: 47
-process action for authentication@: C:\xampp\htdocs\api\Factory.php Line#: 25
-Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 95
-factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
-Determined control: authenticationAuthenticationController@: C:\xampp\htdocs\api\Factory.php Line#: 47
-process action for authentication@: C:\xampp\htdocs\api\Factory.php Line#: 25
-Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 95
-factory constructor called@: C:\xampp\htdocs\api\Factory.php Line#: 17
-Determined control: authenticationAuthenticationController@: C:\xampp\htdocs\api\Factory.php Line#: 47
-process action for authentication@: C:\xampp\htdocs\api\Factory.php Line#: 25
-Building Pregame Page@: C:\xampp\htdocs\api\PageBuilder.php Line#: 95
+Building Home Page@: E:\School\Advanced PHP\xampp\htdocs\api\PageBuilder.php Line#: 61
+factory constructor called@: E:\School\Advanced PHP\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: E:\School\Advanced PHP\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: E:\School\Advanced PHP\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: E:\School\Advanced PHP\xampp\htdocs\api\PageBuilder.php Line#: 112
+factory constructor called@: E:\School\Advanced PHP\xampp\htdocs\api\Factory.php Line#: 17
+Determined control: pregamePregameController@: E:\School\Advanced PHP\xampp\htdocs\api\Factory.php Line#: 47
+process action for pregame@: E:\School\Advanced PHP\xampp\htdocs\api\Factory.php Line#: 25
+Building Pregame Page@: E:\School\Advanced PHP\xampp\htdocs\api\PageBuilder.php Line#: 112

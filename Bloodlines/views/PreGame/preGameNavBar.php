@@ -18,7 +18,7 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="#page-top">Bloodlines</a>
+<a class="navbar-brand" href="/">Bloodlines</a>
 </div>
 <div class="collapse navbar-collapse" id="nd_collapse">
 <ul class="nav navbar-nav navbar-right">

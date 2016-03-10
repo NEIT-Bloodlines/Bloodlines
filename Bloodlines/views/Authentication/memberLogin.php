@@ -3,6 +3,11 @@
  * Developer: David Landi
  * Created: 1/29/16
  * Purpose: View for member login.
+ * 
+ * Developer: Justin Barreira
+ * Created: 2/23/16
+ * Purpose: User login functionality
+ * 
  * TODO: 
  *      - Add to form tag action=""
  *      - Minor css style elements 
@@ -11,7 +16,28 @@
  *      - Needs a controller and model implemented.
  *      - Need php to handle member post.
  * Modifed by: (Name, Reason, Date)
- *  */
+ */
+
+if(Utils::isPostRequest()){
+    
+    $member = new UserAuth();
+    
+    if(!$member->getEmail()){
+        if($member->Login($member)){
+            header('Location: /PreGame');
+        } else {
+            
+        }
+    }
+    if($member->getEmail()){
+        if($member->Signup($member)){
+            header('Location: /Authentication');
+        } else {
+            header('Location: /');
+        }
+    }
+}
+
 ?>
 <!-- MEMBER LOGIN FORM -->
 <section id="member_login" class="dynamic">
@@ -21,21 +47,21 @@
             <span class="pull-right"><i class="fa fa-info-circle" id="btn_member_help"></i></span>
         </div>
         <div class="panel-body">
-            <form class="form-horizontal" role="form">
+            <form class="form-horizontal" role="form" method="post">
                 <div class="input-group frm_input_space">
                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                    <input type="text" class="form-control" id="txtUserName" placeholder="Username" aria-describedby="basic-addon1">
+                    <input type="text" name="username" class="form-control" id="txtUserName" placeholder="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group frm_input_space">
                     <span class="input-group-addon" id="basic-addon2"><i class="fa fa-lock"></i></span>
-                    <input type="password" class="form-control" id="txtPassword" placeholder="Password" aria-describedby="basic-addon2">
+                    <input type="password" name="password" class="form-control" id="txtPassword" placeholder="Password" aria-describedby="basic-addon2">
                 </div>
                 <div class="checkbox">
                     <label><input type="checkbox" id="chkRememberMe"> Remember me</label>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-3">
-                      <button type="button" class="btn btn-block btn-primary frm_btn" id="btnMemberLogin">Login</button>  
+                      <button type="submit" class="btn btn-block btn-primary frm_btn btnMemberLogin" id="btn_member_login">Login</button>  
                     </div>
                     <div class="col-xs-12 col-md-9">
 						<div id="alertWelcome">

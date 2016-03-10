@@ -1,10 +1,7 @@
 <?php
+//ini_set('display_errors', 1);
 //load the required classes
-require("api/MasterController.php");  
-require("api/MasterModel.php");
-require("api/View.php");
-require("api/ViewModel.php");
-require("api/Factory.php");
+include 'api/Dependency.php';
 
 $ctrlFactory = new Factory(); //create the ctrlFactory object
 $controller = $ctrlFactory->buildController(); //creates the requested controller object based on the 'controller' URL value

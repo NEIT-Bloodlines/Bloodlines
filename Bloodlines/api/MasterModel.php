@@ -5,7 +5,7 @@
  * Refactored By: (Name Date Reason)
  */
 
-class MasterModel {
+class MasterModel extends Utils{
     
     protected $viewModel;
 
@@ -13,7 +13,8 @@ class MasterModel {
     public function __construct()
     {
         $this->viewModel = new ViewModel();
-		$this->commonViewData();
+        $this->commonViewData();        
+        $this->setDB();
     }
 
     

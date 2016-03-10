@@ -22,18 +22,18 @@
             <span class="pull-right"><i class="fa fa-info-circle" id="btn_signup_help"></i></span>
         </div>
         <div class="panel-body errors">
-            <form class="form-horizontal" role="form">
+            <form class="form-horizontal" role="form" method="post">
                 <div class="input-group frm_input_space">
                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                    <input type="text" class="form-control" id="txtSUname" placeholder="Username" aria-describedby="basic-addon1">
+                    <input type="text" name="username" class="form-control" id="txtSUname" placeholder="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group frm_input_space">
                     <span class="input-group-addon" id="basic-addon2"><i class="fa fa-envelope"></i></span>
-                    <input type="text" class="form-control" id="txtSUemail" placeholder="Email" aria-describedby="basic-addon2">
+                    <input type="text" name="email" class="form-control" id="txtSUemail" placeholder="Email" aria-describedby="basic-addon2">
                 </div>
                 <div class="input-group frm_input_space">
                     <span class="input-group-addon" id="basic-addon3"><i class="fa fa-lock"></i></span>
-                    <input type="password" class="form-control" id="txtSUpsw" placeholder="Password" aria-describedby="basic-addon3">
+                    <input type="password" name="password" class="form-control" id="txtSUpsw" placeholder="Password" aria-describedby="basic-addon3">
                 </div>
                 <div class="input-group frm_input_space">
                     <span class="input-group-addon" id="basic-addon4"><i class="fa fa-lock"></i></span>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-3">
-                      <button type="button" class="btn btn-block btn-primary frm_btn" id="btnSignUp">Submit</button>  
+                      <button type="submit" class="btn btn-block btn-primary frm_btn" id="btnSignUp">Submit</button>  
                     </div>
                     <div class="col-xs-12 col-md-9">
                         <div id="alertwelcomeSU">

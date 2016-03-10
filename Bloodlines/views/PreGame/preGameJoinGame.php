@@ -11,6 +11,8 @@
  *      - Add links 
  * Modifed by: (Name, Reason, Date)
  *  */
+$joinableGames = $templateData->get('joinableGamesName');
+
 ?>
 
 <section id="joinGame" class="hidden">
@@ -26,7 +28,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <p>Select a game to join</p>
-                    <?php /*TODO populate a list of games that are waiting for people*/ ?>  
+                    <?php 
+                        foreach($joinableGames as $games){
+                            echo $game['gameTitle'].'<br />';
+                        }
+                    /*TODO populate a list of games that are waiting for people*/ ?>  
                 </div>
                 <div class="col-md-6">
                     <form class="form-horizontal" role="form">

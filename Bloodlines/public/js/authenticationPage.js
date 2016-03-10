@@ -53,7 +53,7 @@ var AuthControlsHandler = (function(){
     var msgNullBoth = $('#alertTxtIsBothNull');
     var txtUserName = $('#txtUserName');
     var txtPassword = $('#txtPassword');
-    var btnMemberLogin = $('#btnMemberLogin');
+    var btnMemberLogin = $('.btnMemberLogin');
     var chkRememberMe = $('#chkRememberMe');
     var btnSignUp = $('#btnSignUp');
     var txtSUpswConf = $('#txtSUpswConf');
@@ -71,7 +71,6 @@ var AuthControlsHandler = (function(){
     var onBtnMemberLoginClick = function(){
         btnMemberLogin.click(function(e){
             console.log('btnMemberLogin');
-            e.preventDefault();
             displayMsgNullUsrName();
             displayMsgNullPassword();
             displayMsgNullBoth();
@@ -82,7 +81,6 @@ var AuthControlsHandler = (function(){
     var onBtnSignUpClick = function(){
         btnSignUp.click(function(e){
             console.log('btnSignUp');
-            e.preventDefault();
             displayAlertMoreThanOneNullSU();
             displayAlertPswFieldsNotMatch();
             displaylertTxtpswConfNullSU();
